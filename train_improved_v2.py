@@ -45,9 +45,9 @@ def train_improved_model():
         cos_lr=True,                  # 余弦退火学习率
         warmup_epochs=3,              # 减少warmup epochs
         
-        # 类别平衡策略
-        class_weights=class_weights,   # 显式传递类别权重
-        sampler='weighted',           # 启用加权采样
+        # 类别平衡策略 (注释掉不支持的参数)
+        # class_weights=class_weights,   # 当前版本不支持
+        # sampler='weighted',           # 当前版本不支持
         
         # 损失函数权重优化
         cls=1.2,                      # 分类损失权重
@@ -55,7 +55,7 @@ def train_improved_model():
         dfl=2.5,                      # 分布损失权重 (从1.5提升)
         
         # IoU配置优化
-        iou_type='giou',              # 使用GIoU (更适合长条形目标)
+        # iou_type='giou',              # 当前版本不支持
         iou=0.45,                     # 提升正样本阈值
         
         # 数据增强策略
@@ -73,7 +73,7 @@ def train_improved_model():
         hsv_v=0.4,                    # 亮度增强
         
         # 训练稳定性
-        ema_decay=0.995,              # EMA衰减
+        # ema_decay=0.995,              # 当前版本不支持
         patience=25,
         save_period=-1,
         amp=True,
