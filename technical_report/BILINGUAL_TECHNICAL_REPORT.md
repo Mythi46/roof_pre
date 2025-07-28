@@ -212,85 +212,611 @@ dfl=2.5   # 分布損失重み増加
 
 ---
 
-## ⏱️ Detailed Timeline Analysis | 詳細タイムライン分析
+## 🔬 Data Preprocessing and Engineering | データ前処理とエンジニアリング
 
-### 🕐 Project Timeline Overview | プロジェクトタイムライン概要
+### � Dataset Preprocessing Pipeline | データセット前処理パイプライン
 
-**English:**
-| Phase | Start Time | End Time | Duration | Main Activities |
-|-------|------------|----------|----------|-----------------|
-| **Data Analysis** | 09:00 | 10:30 | 1.5 hours | Dataset analysis, problem identification |
-| **Solution Design** | 10:30 | 11:00 | 0.5 hours | Improvement strategy formulation |
-| **Initial Training** | 11:00 | 13:45 | 2.75 hours | Improved version training (7 epochs) |
-| **Result Analysis** | 13:45 | 14:15 | 0.5 hours | Performance evaluation, report generation |
-| **Continued Training** | 14:15 | 14:45 | 0.5 hours | Additional optimization (3 epochs) |
-| **Final Report** | 14:45 | 15:30 | 0.75 hours | Technical report writing |
-| **Total** | 09:00 | 15:30 | **6.5 hours** | **Complete project cycle** |
-
-**日本語:**
-| フェーズ | 開始時間 | 終了時間 | 持続時間 | 主要活動 |
-|----------|----------|----------|----------|----------|
-| **データ分析** | 09:00 | 10:30 | 1.5時間 | データセット分析、問題特定 |
-| **解決策設計** | 10:30 | 11:00 | 0.5時間 | 改善戦略策定 |
-| **初期訓練** | 11:00 | 13:45 | 2.75時間 | 改善版訓練 (7エポック) |
-| **結果分析** | 13:45 | 14:15 | 0.5時間 | 性能評価、レポート生成 |
-| **継続訓練** | 14:15 | 14:45 | 0.5時間 | 追加最適化 (3エポック) |
-| **最終報告** | 14:45 | 15:30 | 0.75時間 | 技術レポート作成 |
-| **合計** | 09:00 | 15:30 | **6.5時間** | **完全プロジェクトサイクル** |
-
-### 📊 Training Phase Detailed Analysis | 訓練フェーズ詳細分析
-
-#### Phase 1: Improved Training (Epoch 1-7) | フェーズ1: 改善訓練 (エポック1-7)
+#### Data Quality Assessment | データ品質評価
 
 **English:**
-**Time**: 11:00 - 13:45 (2 hours 45 minutes)
-**Configuration**: YOLOv8l-seg, 896px, batch=16
+```python
+# Data quality analysis pipeline
+def analyze_data_quality(dataset_path):
+    """Comprehensive data quality assessment"""
 
-| Epoch | Start Time | End Time | Duration | mAP@0.5 | Loss Reduction |
-|-------|------------|----------|----------|---------|----------------|
-| 1 | 11:00 | 11:20 | 20 min | 63.62% | Baseline established |
-| 2 | 11:20 | 11:40 | 20 min | 80.50% | +26.6% 🚀 |
-| 3 | 11:40 | 12:00 | 20 min | 82.62% | +2.6% |
-| 4 | 12:00 | 12:20 | 20 min | 82.50% | -0.1% |
-| 5 | 12:20 | 12:40 | 20 min | 85.64% | +3.8% |
-| 6 | 12:40 | 13:00 | 20 min | 86.57% | +1.1% |
-| 7 | 13:00 | 13:20 | 20 min | 87.67% | +1.3% |
+    # 1. Annotation format validation
+    annotation_issues = validate_annotations(dataset_path)
+
+    # 2. Image quality assessment
+    image_quality_metrics = assess_image_quality(dataset_path)
+
+    # 3. Class distribution analysis
+    class_distribution = analyze_class_distribution(dataset_path)
+
+    # 4. Spatial distribution analysis
+    spatial_metrics = analyze_spatial_distribution(dataset_path)
+
+    return {
+        'annotation_issues': annotation_issues,
+        'image_quality': image_quality_metrics,
+        'class_distribution': class_distribution,
+        'spatial_metrics': spatial_metrics
+    }
+
+# Key findings from quality assessment
+quality_report = {
+    'total_images': 11454,
+    'total_instances': 141971,
+    'problematic_annotations': 2696,
+    'annotation_error_rate': 1.9,
+    'average_image_resolution': (2048, 1536),
+    'color_space': 'RGB',
+    'file_formats': ['JPG', 'PNG']
+}
+```
 
 **日本語:**
-**時間**: 11:00 - 13:45 (2時間45分)
-**設定**: YOLOv8l-seg, 896px, batch=16
+```python
+# データ品質分析パイプライン
+def analyze_data_quality(dataset_path):
+    """包括的データ品質評価"""
 
-| エポック | 開始時間 | 終了時間 | 持続時間 | mAP@0.5 | 損失減少 |
-|----------|----------|----------|----------|---------|----------|
-| 1 | 11:00 | 11:20 | 20分 | 63.62% | ベースライン確立 |
-| 2 | 11:20 | 11:40 | 20分 | 80.50% | +26.6% 🚀 |
-| 3 | 11:40 | 12:00 | 20分 | 82.62% | +2.6% |
-| 4 | 12:00 | 12:20 | 20分 | 82.50% | -0.1% |
-| 5 | 12:20 | 12:40 | 20分 | 85.64% | +3.8% |
-| 6 | 12:40 | 13:00 | 20分 | 86.57% | +1.1% |
-| 7 | 13:00 | 13:20 | 20分 | 87.67% | +1.3% |
+    # 1. アノテーション形式検証
+    annotation_issues = validate_annotations(dataset_path)
 
-#### Phase 2: Continued Training (Epoch 8-10) | フェーズ2: 継続訓練 (エポック8-10)
+    # 2. 画像品質評価
+    image_quality_metrics = assess_image_quality(dataset_path)
+
+    # 3. クラス分布分析
+    class_distribution = analyze_class_distribution(dataset_path)
+
+    # 4. 空間分布分析
+    spatial_metrics = analyze_spatial_distribution(dataset_path)
+
+    return {
+        'annotation_issues': annotation_issues,
+        'image_quality': image_quality_metrics,
+        'class_distribution': class_distribution,
+        'spatial_metrics': spatial_metrics
+    }
+
+# 品質評価からの主要発見
+quality_report = {
+    'total_images': 11454,
+    'total_instances': 141971,
+    'problematic_annotations': 2696,
+    'annotation_error_rate': 1.9,
+    'average_image_resolution': (2048, 1536),
+    'color_space': 'RGB',
+    'file_formats': ['JPG', 'PNG']
+}
+```
+
+#### Data Cleaning and Normalization | データクリーニングと正規化
 
 **English:**
-**Time**: 14:15 - 14:45 (30 minutes)
-**Configuration**: Reduced learning rate (5e-5), reduced data augmentation
+```python
+# Data preprocessing pipeline
+class DataPreprocessor:
+    def __init__(self, config):
+        self.config = config
+        self.transforms = self._build_transforms()
 
-| Epoch | Start Time | End Time | Duration | mAP@0.5 | Improvement |
-|-------|------------|----------|----------|---------|-------------|
-| 8 | 14:15 | 14:25 | 10 min | 90.47% | +3.20% 🎉 |
-| 9 | 14:25 | 14:35 | 10 min | 90.74% | +3.51% |
-| 10 | 14:35 | 14:45 | 10 min | 90.77% | +3.54% |
+    def _build_transforms(self):
+        """Build preprocessing transforms"""
+        return Compose([
+            # Image preprocessing
+            Resize((896, 896)),
+            Normalize(mean=[0.485, 0.456, 0.406],
+                     std=[0.229, 0.224, 0.225]),
+
+            # Annotation preprocessing
+            FilterSmallObjects(min_area=100),
+            ClipBoundingBoxes(),
+            ValidateAnnotations(),
+        ])
+
+    def clean_annotations(self, annotations):
+        """Clean problematic annotations"""
+        cleaned = []
+        for ann in annotations:
+            # Remove oversized objects (w>0.8 or h>0.8)
+            if ann['bbox'][2] <= 0.8 and ann['bbox'][3] <= 0.8:
+                # Remove undersized objects (w<0.001 or h<0.001)
+                if ann['bbox'][2] >= 0.001 and ann['bbox'][3] >= 0.001:
+                    # Clip coordinates to [0,1] range
+                    ann['bbox'] = np.clip(ann['bbox'], 0, 1)
+                    cleaned.append(ann)
+        return cleaned
+```
 
 **日本語:**
-**時間**: 14:15 - 14:45 (30分)
-**設定**: 学習率低下 (5e-5), データ拡張減少
+```python
+# データ前処理パイプライン
+class DataPreprocessor:
+    def __init__(self, config):
+        self.config = config
+        self.transforms = self._build_transforms()
 
-| エポック | 開始時間 | 終了時間 | 持続時間 | mAP@0.5 | 改善幅 |
-|----------|----------|----------|----------|---------|--------|
-| 8 | 14:15 | 14:25 | 10分 | 90.47% | +3.20% 🎉 |
-| 9 | 14:25 | 14:35 | 10分 | 90.74% | +3.51% |
-| 10 | 14:35 | 14:45 | 10分 | 90.77% | +3.54% |
+    def _build_transforms(self):
+        """前処理変換構築"""
+        return Compose([
+            # 画像前処理
+            Resize((896, 896)),
+            Normalize(mean=[0.485, 0.456, 0.406],
+                     std=[0.229, 0.224, 0.225]),
+
+            # アノテーション前処理
+            FilterSmallObjects(min_area=100),
+            ClipBoundingBoxes(),
+            ValidateAnnotations(),
+        ])
+
+    def clean_annotations(self, annotations):
+        """問題のあるアノテーションをクリーニング"""
+        cleaned = []
+        for ann in annotations:
+            # 過大オブジェクト除去 (w>0.8 または h>0.8)
+            if ann['bbox'][2] <= 0.8 and ann['bbox'][3] <= 0.8:
+                # 過小オブジェクト除去 (w<0.001 または h<0.001)
+                if ann['bbox'][2] >= 0.001 and ann['bbox'][3] >= 0.001:
+                    # 座標を[0,1]範囲にクリップ
+                    ann['bbox'] = np.clip(ann['bbox'], 0, 1)
+                    cleaned.append(ann)
+        return cleaned
+```
+
+### 🏗️ Model Architecture Design | モデルアーキテクチャ設計
+
+#### YOLOv8l-seg Architecture Analysis | YOLOv8l-segアーキテクチャ分析
+
+**English:**
+```python
+# YOLOv8l-seg architecture specifications
+model_architecture = {
+    'backbone': {
+        'type': 'CSPDarknet',
+        'depth_multiple': 1.0,
+        'width_multiple': 1.0,
+        'channels': [64, 128, 256, 512, 1024],
+        'layers': [3, 6, 6, 3],
+        'activation': 'SiLU'
+    },
+    'neck': {
+        'type': 'PANet',
+        'feature_fusion': 'FPN + PAN',
+        'channels': [256, 512, 1024],
+        'upsample_mode': 'nearest'
+    },
+    'head': {
+        'detection_head': {
+            'type': 'YOLOv8DetectionHead',
+            'num_classes': 4,
+            'anchors': 'anchor-free',
+            'reg_max': 16
+        },
+        'segmentation_head': {
+            'type': 'YOLOv8SegmentationHead',
+            'mask_channels': 32,
+            'proto_channels': 256,
+            'mask_resolution': (160, 160)
+        }
+    },
+    'total_parameters': 45.9e6,
+    'computational_complexity': 220.8e9  # GFLOPs
+}
+```
+
+**日本語:**
+```python
+# YOLOv8l-segアーキテクチャ仕様
+model_architecture = {
+    'backbone': {
+        'type': 'CSPDarknet',
+        'depth_multiple': 1.0,
+        'width_multiple': 1.0,
+        'channels': [64, 128, 256, 512, 1024],
+        'layers': [3, 6, 6, 3],
+        'activation': 'SiLU'
+    },
+    'neck': {
+        'type': 'PANet',
+        'feature_fusion': 'FPN + PAN',
+        'channels': [256, 512, 1024],
+        'upsample_mode': 'nearest'
+    },
+    'head': {
+        'detection_head': {
+            'type': 'YOLOv8DetectionHead',
+            'num_classes': 4,
+            'anchors': 'anchor-free',
+            'reg_max': 16
+        },
+        'segmentation_head': {
+            'type': 'YOLOv8SegmentationHead',
+            'mask_channels': 32,
+            'proto_channels': 256,
+            'mask_resolution': (160, 160)
+        }
+    },
+    'total_parameters': 45.9e6,
+    'computational_complexity': 220.8e9  # GFLOPs
+}
+```
+
+#### Model Optimization Strategies | モデル最適化戦略
+
+**English:**
+```python
+# Model optimization configuration
+optimization_config = {
+    'architecture_improvements': {
+        'model_upgrade': 'YOLOv8m-seg → YOLOv8l-seg',
+        'capacity_increase': '25.9M → 45.9M parameters',
+        'feature_extraction': 'Enhanced multi-scale features',
+        'receptive_field': 'Larger effective receptive field'
+    },
+    'input_optimization': {
+        'image_size': '768 → 896 pixels',
+        'aspect_ratio': 'Maintained 1:1',
+        'preprocessing': 'Enhanced normalization',
+        'data_format': 'RGB, float32'
+    },
+    'training_optimization': {
+        'optimizer': 'AdamW (vs SGD)',
+        'learning_rate': '1e-4 (vs 0.005)',
+        'scheduler': 'CosineAnnealingLR',
+        'weight_decay': 0.0005,
+        'gradient_clipping': 10.0
+    }
+}
+```
+
+**日本語:**
+```python
+# モデル最適化設定
+optimization_config = {
+    'architecture_improvements': {
+        'model_upgrade': 'YOLOv8m-seg → YOLOv8l-seg',
+        'capacity_increase': '25.9M → 45.9Mパラメータ',
+        'feature_extraction': '強化されたマルチスケール特徴',
+        'receptive_field': 'より大きな有効受容野'
+    },
+    'input_optimization': {
+        'image_size': '768 → 896ピクセル',
+        'aspect_ratio': '1:1維持',
+        'preprocessing': '強化された正規化',
+        'data_format': 'RGB, float32'
+    },
+    'training_optimization': {
+        'optimizer': 'AdamW (SGD対比)',
+        'learning_rate': '1e-4 (0.005対比)',
+        'scheduler': 'CosineAnnealingLR',
+        'weight_decay': 0.0005,
+        'gradient_clipping': 10.0
+    }
+}
+```
+
+### 🎨 Advanced Data Augmentation Strategies | 高度データ拡張戦略
+
+#### Copy-Paste Augmentation Implementation | Copy-Paste拡張実装
+
+**English:**
+```python
+# Copy-paste augmentation for class imbalance
+class CopyPasteAugmentation:
+    def __init__(self, probability=0.2, max_objects=3):
+        self.probability = probability
+        self.max_objects = max_objects
+        self.minority_classes = ['Baren-Land', 'rice-fields']
+
+    def __call__(self, image, annotations, source_pool):
+        """Apply copy-paste augmentation"""
+        if random.random() > self.probability:
+            return image, annotations
+
+        # Select minority class objects from source pool
+        source_objects = self._select_minority_objects(source_pool)
+
+        # Find suitable paste locations
+        paste_locations = self._find_paste_locations(image, annotations)
+
+        # Paste objects with proper blending
+        augmented_image, new_annotations = self._paste_objects(
+            image, annotations, source_objects, paste_locations
+        )
+
+        return augmented_image, new_annotations
+
+    def _select_minority_objects(self, source_pool):
+        """Select objects from minority classes"""
+        minority_objects = []
+        for obj in source_pool:
+            if obj['class'] in self.minority_classes:
+                minority_objects.append(obj)
+
+        # Randomly select up to max_objects
+        selected = random.sample(
+            minority_objects,
+            min(self.max_objects, len(minority_objects))
+        )
+        return selected
+```
+
+**日本語:**
+```python
+# クラス不均衡のためのCopy-Paste拡張
+class CopyPasteAugmentation:
+    def __init__(self, probability=0.2, max_objects=3):
+        self.probability = probability
+        self.max_objects = max_objects
+        self.minority_classes = ['Baren-Land', 'rice-fields']
+
+    def __call__(self, image, annotations, source_pool):
+        """Copy-Paste拡張適用"""
+        if random.random() > self.probability:
+            return image, annotations
+
+        # ソースプールから少数クラスオブジェクト選択
+        source_objects = self._select_minority_objects(source_pool)
+
+        # 適切な貼り付け位置を見つける
+        paste_locations = self._find_paste_locations(image, annotations)
+
+        # 適切なブレンディングでオブジェクト貼り付け
+        augmented_image, new_annotations = self._paste_objects(
+            image, annotations, source_objects, paste_locations
+        )
+
+        return augmented_image, new_annotations
+
+    def _select_minority_objects(self, source_pool):
+        """少数クラスからオブジェクト選択"""
+        minority_objects = []
+        for obj in source_pool:
+            if obj['class'] in self.minority_classes:
+                minority_objects.append(obj)
+
+        # max_objectsまでランダム選択
+        selected = random.sample(
+            minority_objects,
+            min(self.max_objects, len(minority_objects))
+        )
+        return selected
+```
+
+#### Mosaic and MixUp Augmentation | MosaicとMixUp拡張
+
+**English:**
+```python
+# Advanced mosaic augmentation
+class MosaicAugmentation:
+    def __init__(self, probability=0.7, image_size=896):
+        self.probability = probability
+        self.image_size = image_size
+
+    def __call__(self, images, annotations_list):
+        """Create mosaic from 4 images"""
+        if random.random() > self.probability:
+            return images[0], annotations_list[0]
+
+        # Create mosaic canvas
+        mosaic_image = np.zeros((self.image_size, self.image_size, 3), dtype=np.uint8)
+        mosaic_annotations = []
+
+        # Define quadrant positions
+        quadrants = [
+            (0, 0, self.image_size//2, self.image_size//2),  # Top-left
+            (self.image_size//2, 0, self.image_size, self.image_size//2),  # Top-right
+            (0, self.image_size//2, self.image_size//2, self.image_size),  # Bottom-left
+            (self.image_size//2, self.image_size//2, self.image_size, self.image_size)  # Bottom-right
+        ]
+
+        # Place images in quadrants
+        for i, (image, annotations) in enumerate(zip(images[:4], annotations_list[:4])):
+            x1, y1, x2, y2 = quadrants[i]
+
+            # Resize image to fit quadrant
+            resized_image = cv2.resize(image, (x2-x1, y2-y1))
+            mosaic_image[y1:y2, x1:x2] = resized_image
+
+            # Adjust annotations for new position and scale
+            adjusted_annotations = self._adjust_annotations(
+                annotations, (x1, y1), (x2-x1, y2-y1), image.shape[:2]
+            )
+            mosaic_annotations.extend(adjusted_annotations)
+
+        return mosaic_image, mosaic_annotations
+```
+
+**日本語:**
+```python
+# 高度モザイク拡張
+class MosaicAugmentation:
+    def __init__(self, probability=0.7, image_size=896):
+        self.probability = probability
+        self.image_size = image_size
+
+    def __call__(self, images, annotations_list):
+        """4枚の画像からモザイク作成"""
+        if random.random() > self.probability:
+            return images[0], annotations_list[0]
+
+        # モザイクキャンバス作成
+        mosaic_image = np.zeros((self.image_size, self.image_size, 3), dtype=np.uint8)
+        mosaic_annotations = []
+
+        # 四分割位置定義
+        quadrants = [
+            (0, 0, self.image_size//2, self.image_size//2),  # 左上
+            (self.image_size//2, 0, self.image_size, self.image_size//2),  # 右上
+            (0, self.image_size//2, self.image_size//2, self.image_size),  # 左下
+            (self.image_size//2, self.image_size//2, self.image_size, self.image_size)  # 右下
+        ]
+
+        # 四分割に画像配置
+        for i, (image, annotations) in enumerate(zip(images[:4], annotations_list[:4])):
+            x1, y1, x2, y2 = quadrants[i]
+
+            # 四分割に合わせて画像リサイズ
+            resized_image = cv2.resize(image, (x2-x1, y2-y1))
+            mosaic_image[y1:y2, x1:x2] = resized_image
+
+            # 新しい位置とスケールに合わせてアノテーション調整
+            adjusted_annotations = self._adjust_annotations(
+                annotations, (x1, y1), (x2-x1, y2-y1), image.shape[:2]
+            )
+            mosaic_annotations.extend(adjusted_annotations)
+
+        return mosaic_image, mosaic_annotations
+```
+
+### 🎯 Training Strategy Implementation | 訓練戦略実装
+
+#### Two-Stage Training Pipeline | 二段階訓練パイプライン
+
+**English:**
+```python
+# Two-stage training implementation
+class TwoStageTrainer:
+    def __init__(self, model, config):
+        self.model = model
+        self.config = config
+        self.stage1_config = config['stage1']
+        self.stage2_config = config['stage2']
+
+    def train_stage1(self):
+        """Stage 1: Aggressive optimization"""
+        print("🚀 Starting Stage 1: Aggressive Optimization")
+
+        # Configure stage 1 parameters
+        optimizer = AdamW(
+            self.model.parameters(),
+            lr=self.stage1_config['lr0'],
+            weight_decay=self.stage1_config['weight_decay']
+        )
+
+        scheduler = CosineAnnealingLR(
+            optimizer,
+            T_max=self.stage1_config['epochs'],
+            eta_min=self.stage1_config['lr0'] * self.stage1_config['lrf']
+        )
+
+        # Strong data augmentation
+        augmentations = Compose([
+            MosaicAugmentation(probability=0.7),
+            CopyPasteAugmentation(probability=0.2),
+            ColorJitter(brightness=0.4, contrast=0.4, saturation=0.4),
+            RandomHorizontalFlip(probability=0.5),
+            RandomVerticalFlip(probability=0.3)
+        ])
+
+        # Training loop
+        for epoch in range(self.stage1_config['epochs']):
+            train_loss = self._train_epoch(optimizer, augmentations)
+            val_metrics = self._validate_epoch()
+            scheduler.step()
+
+            print(f"Epoch {epoch+1}: Loss={train_loss:.4f}, mAP@0.5={val_metrics['map50']:.4f}")
+
+    def train_stage2(self):
+        """Stage 2: Fine-tuning optimization"""
+        print("🎯 Starting Stage 2: Fine-tuning Optimization")
+
+        # Reduce learning rate
+        optimizer = AdamW(
+            self.model.parameters(),
+            lr=self.stage2_config['lr0'],  # 5e-5
+            weight_decay=self.stage2_config['weight_decay']
+        )
+
+        # Reduced data augmentation
+        augmentations = Compose([
+            MosaicAugmentation(probability=0.5),
+            CopyPasteAugmentation(probability=0.1),
+            ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2),
+            RandomHorizontalFlip(probability=0.5)
+        ])
+
+        # Fine-tuning loop
+        for epoch in range(self.stage2_config['epochs']):
+            train_loss = self._train_epoch(optimizer, augmentations)
+            val_metrics = self._validate_epoch()
+
+            print(f"Fine-tune Epoch {epoch+1}: Loss={train_loss:.4f}, mAP@0.5={val_metrics['map50']:.4f}")
+```
+
+**日本語:**
+```python
+# 二段階訓練実装
+class TwoStageTrainer:
+    def __init__(self, model, config):
+        self.model = model
+        self.config = config
+        self.stage1_config = config['stage1']
+        self.stage2_config = config['stage2']
+
+    def train_stage1(self):
+        """段階1: 積極的最適化"""
+        print("🚀 段階1開始: 積極的最適化")
+
+        # 段階1パラメータ設定
+        optimizer = AdamW(
+            self.model.parameters(),
+            lr=self.stage1_config['lr0'],
+            weight_decay=self.stage1_config['weight_decay']
+        )
+
+        scheduler = CosineAnnealingLR(
+            optimizer,
+            T_max=self.stage1_config['epochs'],
+            eta_min=self.stage1_config['lr0'] * self.stage1_config['lrf']
+        )
+
+        # 強力なデータ拡張
+        augmentations = Compose([
+            MosaicAugmentation(probability=0.7),
+            CopyPasteAugmentation(probability=0.2),
+            ColorJitter(brightness=0.4, contrast=0.4, saturation=0.4),
+            RandomHorizontalFlip(probability=0.5),
+            RandomVerticalFlip(probability=0.3)
+        ])
+
+        # 訓練ループ
+        for epoch in range(self.stage1_config['epochs']):
+            train_loss = self._train_epoch(optimizer, augmentations)
+            val_metrics = self._validate_epoch()
+            scheduler.step()
+
+            print(f"エポック {epoch+1}: Loss={train_loss:.4f}, mAP@0.5={val_metrics['map50']:.4f}")
+
+    def train_stage2(self):
+        """段階2: 微調整最適化"""
+        print("🎯 段階2開始: 微調整最適化")
+
+        # 学習率低下
+        optimizer = AdamW(
+            self.model.parameters(),
+            lr=self.stage2_config['lr0'],  # 5e-5
+            weight_decay=self.stage2_config['weight_decay']
+        )
+
+        # データ拡張減少
+        augmentations = Compose([
+            MosaicAugmentation(probability=0.5),
+            CopyPasteAugmentation(probability=0.1),
+            ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2),
+            RandomHorizontalFlip(probability=0.5)
+        ])
+
+        # 微調整ループ
+        for epoch in range(self.stage2_config['epochs']):
+            train_loss = self._train_epoch(optimizer, augmentations)
+            val_metrics = self._validate_epoch()
+
+            print(f"微調整エポック {epoch+1}: Loss={train_loss:.4f}, mAP@0.5={val_metrics['map50']:.4f}")
+```
 
 ---
 

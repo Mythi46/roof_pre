@@ -483,48 +483,180 @@ Key Factors:
 4. 過学習回避
 ```
 
-### 📊 Time-Performance Efficiency | 時間-性能効率
+### 🔬 Advanced Performance Analysis | 高度性能分析
 
-#### Efficiency Analysis | 効率分析
+#### Feature Map Analysis | 特徴マップ分析
 
 **English:**
-```
-Phase 1 (40 minutes): +26.6% → 39.9%/hour
-Phase 2 (100 minutes): +7.17% → 4.3%/hour
-Phase 3 (30 minutes): +3.54% → 7.1%/hour
+```python
+# Feature map visualization and analysis
+class FeatureAnalyzer:
+    def __init__(self, model):
+        self.model = model
+        self.feature_hooks = {}
+        self._register_hooks()
 
-Overall Efficiency: 42.7%/3.25 hours = 13.1%/hour
+    def _register_hooks(self):
+        """Register hooks for feature extraction"""
+        def hook_fn(name):
+            def hook(module, input, output):
+                self.feature_hooks[name] = output.detach()
+            return hook
+
+        # Register hooks for key layers
+        self.model.model[-1].register_forward_hook(hook_fn('detection_head'))
+        self.model.model[9].register_forward_hook(hook_fn('backbone_p3'))
+        self.model.model[12].register_forward_hook(hook_fn('backbone_p4'))
+        self.model.model[15].register_forward_hook(hook_fn('backbone_p5'))
+
+    def analyze_feature_quality(self, image_batch):
+        """Analyze feature map quality"""
+        with torch.no_grad():
+            _ = self.model(image_batch)
+
+        feature_stats = {}
+        for layer_name, features in self.feature_hooks.items():
+            # Calculate feature statistics
+            feature_stats[layer_name] = {
+                'mean_activation': features.mean().item(),
+                'std_activation': features.std().item(),
+                'sparsity': (features == 0).float().mean().item(),
+                'dynamic_range': (features.max() - features.min()).item()
+            }
+
+        return feature_stats
 ```
 
 **日本語:**
-```
-フェーズ1 (40分): +26.6% → 39.9%/時間
-フェーズ2 (100分): +7.17% → 4.3%/時間
-フェーズ3 (30分): +3.54% → 7.1%/時間
+```python
+# 特徴マップ可視化と分析
+class FeatureAnalyzer:
+    def __init__(self, model):
+        self.model = model
+        self.feature_hooks = {}
+        self._register_hooks()
 
-総合効率: 42.7%/3.25時間 = 13.1%/時間
+    def _register_hooks(self):
+        """特徴抽出用フック登録"""
+        def hook_fn(name):
+            def hook(module, input, output):
+                self.feature_hooks[name] = output.detach()
+            return hook
+
+        # 主要レイヤーにフック登録
+        self.model.model[-1].register_forward_hook(hook_fn('detection_head'))
+        self.model.model[9].register_forward_hook(hook_fn('backbone_p3'))
+        self.model.model[12].register_forward_hook(hook_fn('backbone_p4'))
+        self.model.model[15].register_forward_hook(hook_fn('backbone_p5'))
+
+    def analyze_feature_quality(self, image_batch):
+        """特徴マップ品質分析"""
+        with torch.no_grad():
+            _ = self.model(image_batch)
+
+        feature_stats = {}
+        for layer_name, features in self.feature_hooks.items():
+            # 特徴統計計算
+            feature_stats[layer_name] = {
+                'mean_activation': features.mean().item(),
+                'std_activation': features.std().item(),
+                'sparsity': (features == 0).float().mean().item(),
+                'dynamic_range': (features.max() - features.min()).item()
+            }
+
+        return feature_stats
 ```
 
-#### Marginal Return Analysis | 限界収益分析
+#### Gradient Analysis | 勾配分析
 
 **English:**
-```
-Epoch 1-2: High return period (26.6% improvement)
-Epoch 3-7: Medium return period (7.17% improvement)
-Epoch 8-10: Low return period (3.54% improvement)
+```python
+# Gradient flow analysis
+class GradientAnalyzer:
+    def __init__(self, model):
+        self.model = model
+        self.gradient_norms = {}
 
-Diminishing returns: As expected
-Stopping timing: Reasonable (marginal return <1%)
+    def analyze_gradient_flow(self):
+        """Analyze gradient flow through the network"""
+        gradient_norms = {}
+
+        for name, param in self.model.named_parameters():
+            if param.grad is not None:
+                gradient_norms[name] = {
+                    'grad_norm': param.grad.norm().item(),
+                    'param_norm': param.norm().item(),
+                    'grad_param_ratio': (param.grad.norm() / param.norm()).item()
+                }
+
+        # Identify potential gradient issues
+        gradient_issues = self._identify_gradient_issues(gradient_norms)
+
+        return gradient_norms, gradient_issues
+
+    def _identify_gradient_issues(self, gradient_norms):
+        """Identify gradient flow issues"""
+        issues = []
+
+        for layer_name, stats in gradient_norms.items():
+            # Check for vanishing gradients
+            if stats['grad_norm'] < 1e-6:
+                issues.append(f"Vanishing gradient in {layer_name}")
+
+            # Check for exploding gradients
+            if stats['grad_norm'] > 10.0:
+                issues.append(f"Exploding gradient in {layer_name}")
+
+            # Check for dead neurons
+            if stats['grad_param_ratio'] < 1e-8:
+                issues.append(f"Potential dead neurons in {layer_name}")
+
+        return issues
 ```
 
 **日本語:**
-```
-エポック1-2: 高収益期 (26.6%改善)
-エポック3-7: 中収益期 (7.17%改善)
-エポック8-10: 低収益期 (3.54%改善)
+```python
+# 勾配フロー分析
+class GradientAnalyzer:
+    def __init__(self, model):
+        self.model = model
+        self.gradient_norms = {}
 
-収益逓減: 予想通り
-停止タイミング: 合理的 (限界収益<1%)
+    def analyze_gradient_flow(self):
+        """ネットワーク内勾配フロー分析"""
+        gradient_norms = {}
+
+        for name, param in self.model.named_parameters():
+            if param.grad is not None:
+                gradient_norms[name] = {
+                    'grad_norm': param.grad.norm().item(),
+                    'param_norm': param.norm().item(),
+                    'grad_param_ratio': (param.grad.norm() / param.norm()).item()
+                }
+
+        # 潜在的勾配問題特定
+        gradient_issues = self._identify_gradient_issues(gradient_norms)
+
+        return gradient_norms, gradient_issues
+
+    def _identify_gradient_issues(self, gradient_norms):
+        """勾配フロー問題特定"""
+        issues = []
+
+        for layer_name, stats in gradient_norms.items():
+            # 勾配消失チェック
+            if stats['grad_norm'] < 1e-6:
+                issues.append(f"勾配消失 in {layer_name}")
+
+            # 勾配爆発チェック
+            if stats['grad_norm'] > 10.0:
+                issues.append(f"勾配爆発 in {layer_name}")
+
+            # 死んだニューロンチェック
+            if stats['grad_param_ratio'] < 1e-8:
+                issues.append(f"潜在的死んだニューロン in {layer_name}")
+
+        return issues
 ```
 
 ---
