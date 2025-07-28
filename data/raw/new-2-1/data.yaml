@@ -1,0 +1,15 @@
+names:
+- Baren-Land
+- farm
+- rice-fields
+- roof
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: new-2-6zp4h
+  url: https://app.roboflow.com/a-imc4u/new-2-6zp4h/1
+  version: 1
+  workspace: a-imc4u
+test: ../test/images
+train: ../train/images
+val: ../valid/images
