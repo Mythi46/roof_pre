@@ -17,7 +17,39 @@
 
 ## 📁 文档结构
 
-### 📊 核心技术文档
+### 🌐 双语言技术文档 | Bilingual Technical Documentation
+
+#### 1. [📋 双语言综合技术报告](./BILINGUAL_TECHNICAL_REPORT.md) | Bilingual Comprehensive Technical Report
+**主要内容 | Main Content**:
+- 项目执行摘要和核心成就 | Project executive summary and core achievements
+- 技术深度分析和创新点 | Technical deep analysis and innovations
+- 完整的性能提升分析 | Complete performance improvement analysis
+- 质量保证与验证方法 | Quality assurance and validation methods
+- 部署就绪性评估 | Deployment readiness assessment
+
+**适用对象 | Target Audience**: 技术负责人、项目经理、技术审核人员 | Technical leads, project managers, technical reviewers
+
+#### 2. [📊 双语言性能分析](./BILINGUAL_PERFORMANCE_ANALYSIS.md) | Bilingual Performance Analysis
+**主要内容 | Main Content**:
+- 逐Epoch性能演进详情 | Epoch-by-epoch performance evolution
+- 损失函数深度分析 | Loss function deep analysis
+- 类别特定性能评估 | Class-specific performance assessment
+- 性能基准对比 | Performance benchmark comparison
+- 技术指标详细说明 | Technical indicators detailed explanation
+
+**适用对象 | Target Audience**: 算法工程师、模型研究人员 | Algorithm engineers, model researchers
+
+#### 3. [🚀 双语言部署指南](./BILINGUAL_DEPLOYMENT_GUIDE.md) | Bilingual Deployment Guide
+**主要内容 | Main Content**:
+- 环境配置和依赖管理 | Environment configuration and dependency management
+- 快速部署和高级优化 | Quick deployment and advanced optimization
+- Web服务和Docker部署 | Web service and Docker deployment
+- 性能监控和故障排除 | Performance monitoring and troubleshooting
+- 生产环境检查清单 | Production environment checklist
+
+**适用对象 | Target Audience**: 部署工程师、运维人员、系统架构师 | Deployment engineers, DevOps, system architects
+
+### 📊 中文核心技术文档 | Chinese Core Technical Documentation
 
 #### 1. [📋 综合技术报告](./COMPREHENSIVE_TECHNICAL_REPORT.md)
 **主要内容**:
@@ -73,40 +105,40 @@
 
 ## 🎯 快速导航
 
-### 📊 按角色查看
+### 📊 按角色查看 | By Role
 
-#### 🔬 研究人员/算法工程师
-**推荐阅读顺序**:
-1. [综合技术报告](./COMPREHENSIVE_TECHNICAL_REPORT.md) - 了解整体技术方案
-2. [性能指标分析](./performance_metrics_analysis.md) - 深入理解性能提升
-3. [训练配置详情](./training_configuration_details.md) - 学习配置优化方法
+#### 🔬 研究人员/算法工程师 | Researchers/Algorithm Engineers
+**推荐阅读顺序 | Recommended Reading Order**:
+1. [双语言综合技术报告](./BILINGUAL_TECHNICAL_REPORT.md) - 了解整体技术方案 | Understand overall technical approach
+2. [双语言性能分析](./BILINGUAL_PERFORMANCE_ANALYSIS.md) - 深入理解性能提升 | Deep understanding of performance improvements
+3. [训练配置详情](./training_configuration_details.md) - 学习配置优化方法 | Learn configuration optimization methods
 
-**关注重点**:
-- 技术创新点和解决方案
-- 性能提升的技术原理
-- 可复现的训练配置
+**关注重点 | Focus Areas**:
+- 技术创新点和解决方案 | Technical innovations and solutions
+- 性能提升的技术原理 | Technical principles of performance improvement
+- 可复现的训练配置 | Reproducible training configurations
 
-#### 👨‍💼 项目管理人员
-**推荐阅读顺序**:
-1. [综合技术报告](./COMPREHENSIVE_TECHNICAL_REPORT.md) - 项目概览和成果
-2. [详细时间线分析](./detailed_timeline_analysis.md) - 时间效率分析
-3. [部署指南](./deployment_guide.md) - 部署就绪性评估
+#### 👨‍💼 项目管理人员 | Project Managers
+**推荐阅读顺序 | Recommended Reading Order**:
+1. [双语言综合技术报告](./BILINGUAL_TECHNICAL_REPORT.md) - 项目概览和成果 | Project overview and achievements
+2. [详细时间线分析](./detailed_timeline_analysis.md) - 时间效率分析 | Time efficiency analysis
+3. [双语言部署指南](./BILINGUAL_DEPLOYMENT_GUIDE.md) - 部署就绪性评估 | Deployment readiness assessment
 
-**关注重点**:
-- 项目成果和商业价值
-- 时间效率和资源利用
-- 部署计划和风险评估
+**关注重点 | Focus Areas**:
+- 项目成果和商业价值 | Project achievements and business value
+- 时间效率和资源利用 | Time efficiency and resource utilization
+- 部署计划和风险评估 | Deployment planning and risk assessment
 
-#### 🛠️ 工程人员/部署人员
-**推荐阅读顺序**:
-1. [部署指南](./deployment_guide.md) - 完整部署方案
-2. [训练配置详情](./training_configuration_details.md) - 技术配置理解
-3. [综合技术报告](./COMPREHENSIVE_TECHNICAL_REPORT.md) - 技术背景
+#### 🛠️ 工程人员/部署人员 | Engineers/Deployment Personnel
+**推荐阅读顺序 | Recommended Reading Order**:
+1. [双语言部署指南](./BILINGUAL_DEPLOYMENT_GUIDE.md) - 完整部署方案 | Complete deployment solution
+2. [训练配置详情](./training_configuration_details.md) - 技术配置理解 | Technical configuration understanding
+3. [双语言综合技术报告](./BILINGUAL_TECHNICAL_REPORT.md) - 技术背景 | Technical background
 
-**关注重点**:
-- 环境配置和依赖管理
-- 部署步骤和最佳实践
-- 性能监控和故障排除
+**关注重点 | Focus Areas**:
+- 环境配置和依赖管理 | Environment configuration and dependency management
+- 部署步骤和最佳实践 | Deployment steps and best practices
+- 性能监控和故障排除 | Performance monitoring and troubleshooting
 
 ### 📈 按需求查看
 
