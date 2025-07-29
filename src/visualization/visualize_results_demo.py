@@ -18,10 +18,14 @@ from PIL import Image
 import json
 from datetime import datetime
 
-def find_test_images(data_yaml_path, num_images=20):
-    """从数据集中选取测试图片"""
+# 设置matplotlib使用英文显示，避免乱码问题
+plt.rcParams['font.family'] = 'DejaVu Sans'
+plt.rcParams['axes.unicode_minus'] = False
 
-    print("🔍 查找测试图片...")
+def find_test_images(data_yaml_path, num_images=50):
+    """Select test images from dataset"""
+
+    print("🔍 Finding test images...")
 
     # 读取数据集配置
     import yaml
@@ -58,14 +62,14 @@ def find_test_images(data_yaml_path, num_images=20):
     # 随机选择指定数量的图片
     selected_images = random.sample(image_files, min(num_images, len(image_files)))
 
-    print(f"✅ 找到 {len(image_files)} 张图片，选择了 {len(selected_images)} 张")
+    print(f"✅ Found {len(image_files)} images, selected {len(selected_images)}")
 
     return selected_images
 
 def load_best_model():
-    """加载最佳训练模型"""
+    """Load best trained model"""
 
-    print("🔧 加载最佳模型...")
+    print("🔧 Loading best model...")
 
     # 尝试加载继续训练的最佳模型
     model_paths = [
@@ -76,11 +80,11 @@ def load_best_model():
 
     for model_path in model_paths:
         if os.path.exists(model_path):
-            print(f"✅ 加载模型: {model_path}")
+            print(f"✅ Loading model: {model_path}")
             model = YOLO(model_path)
             return model, model_path
 
-    print("❌ 未找到训练好的模型")
+    print("❌ No trained model found")
     return None, None
 
 def predict_and_visualize(model, image_path, output_dir, image_index):
@@ -107,12 +111,12 @@ def predict_and_visualize(model, image_path, output_dir, image_index):
     # 创建对比图
     fig, axes = plt.subplots(1, 2, figsize=(20, 10))
 
-    # 原图
+    # Original Image
     axes[0].imshow(image_rgb)
-    axes[0].set_title(f'原图 {image_index+1}: {image_path.name}', fontsize=14, fontweight='bold')
+    axes[0].set_title(f'Original {image_index+1}: {image_path.name}', fontsize=14, fontweight='bold')
     axes[0].axis('off')
 
-    # 检测结果
+    # Detection Results
     axes[1].imshow(annotated_rgb)
 
     # 统计检测结果
@@ -136,14 +140,14 @@ def predict_and_visualize(model, image_path, output_dir, image_index):
                 'bbox': box.xyxy[0].tolist()
             })
 
-        # 生成标题
-        title_parts = [f'检测结果 (共{num_detections}个目标)']
+        # Generate title
+        title_parts = [f'Detection Results ({num_detections} objects)']
         for class_name, count in class_counts.items():
-            title_parts.append(f'{class_name}: {count}个')
+            title_parts.append(f'{class_name}: {count}')
 
         title = '\n'.join(title_parts)
     else:
-        title = '检测结果 (未检测到目标)'
+        title = 'Detection Results (No objects detected)'
 
     axes[1].set_title(title, fontsize=14, fontweight='bold')
     axes[1].axis('off')
@@ -169,9 +173,9 @@ def predict_and_visualize(model, image_path, output_dir, image_index):
     }
 
 def create_summary_visualization(results_data, output_dir):
-    """创建结果总览可视化"""
+    """Create summary visualization"""
 
-    print("📊 创建结果总览...")
+    print("📊 Creating results summary...")
 
     # 统计总体结果
     total_images = len(results_data)
@@ -231,30 +235,30 @@ def create_summary_visualization(results_data, output_dir):
     # 4. 总体统计
     axes[1, 1].axis('off')
     stats_text = f"""
-📊 检测结果总览
+Detection Results Summary
 
-🖼️ 总图片数: {total_images}
-🎯 总检测数: {total_detections}
-📈 平均每图: {total_detections/total_images:.1f}个目标
+Total Images: {total_images}
+Total Detections: {total_detections}
+Average per Image: {total_detections/total_images:.1f} objects
 
-📋 类别统计:
+Class Statistics:
 """
 
     for class_name, count in class_counts.items():
         percentage = (count / total_detections) * 100 if total_detections > 0 else 0
-        stats_text += f"   {class_name}: {count}个 ({percentage:.1f}%)\n"
+        stats_text += f"   {class_name}: {count} ({percentage:.1f}%)\n"
 
     if confidence_scores:
-        stats_text += f"\n🎯 置信度统计:\n"
-        stats_text += f"   平均: {np.mean(confidence_scores):.3f}\n"
-        stats_text += f"   最高: {np.max(confidence_scores):.3f}\n"
-        stats_text += f"   最低: {np.min(confidence_scores):.3f}\n"
+        stats_text += f"\nConfidence Statistics:\n"
+        stats_text += f"   Average: {np.mean(confidence_scores):.3f}\n"
+        stats_text += f"   Maximum: {np.max(confidence_scores):.3f}\n"
+        stats_text += f"   Minimum: {np.min(confidence_scores):.3f}\n"
 
     axes[1, 1].text(0.1, 0.9, stats_text, transform=axes[1, 1].transAxes,
                     fontsize=12, verticalalignment='top',
                     bbox=dict(boxstyle="round,pad=0.3", facecolor="lightblue", alpha=0.5))
 
-    plt.suptitle('🏠 屋顶检测结果总览 - 20张图片可视化分析', fontsize=16, fontweight='bold')
+    plt.suptitle('🏠 Roof Detection Results Overview - 20 Images Visualization Analysis', fontsize=16, fontweight='bold')
     plt.tight_layout()
 
     # 保存总览图
@@ -267,7 +271,7 @@ def create_summary_visualization(results_data, output_dir):
 def main():
     """主函数"""
 
-    print("🎨 屋顶检测可视化演示")
+    print("🎨 Roof Detection Visualization Demo")
     print("=" * 50)
 
     # 创建输出目录
@@ -278,41 +282,41 @@ def main():
     data_yaml = "data/raw/new-2-1/data.yaml"
 
     if not os.path.exists(data_yaml):
-        print(f"❌ 数据集配置文件不存在: {data_yaml}")
+        print(f"❌ Dataset config file not found: {data_yaml}")
         return
 
-    # 加载模型
+    # Load model
     model, model_path = load_best_model()
     if model is None:
         return
 
-    # 选择测试图片
-    test_images = find_test_images(data_yaml, num_images=20)
+    # Select test images
+    test_images = find_test_images(data_yaml, num_images=50)
     if not test_images:
         return
 
-    print(f"\n🚀 开始处理 {len(test_images)} 张图片...")
+    print(f"\n🚀 Processing {len(test_images)} images...")
 
-    # 处理每张图片
+    # Process each image
     results_data = []
 
     for i, image_path in enumerate(test_images):
-        print(f"🔍 处理图片 {i+1}/20: {image_path.name}")
+        print(f"🔍 Processing image {i+1}/50: {image_path.name}")
 
         try:
             result = predict_and_visualize(model, image_path, output_dir, i)
             results_data.append(result)
-            print(f"   ✅ 检测到 {result['num_detections']} 个目标")
+            print(f"   ✅ Detected {result['num_detections']} objects")
 
         except Exception as e:
-            print(f"   ❌ 处理失败: {e}")
+            print(f"   ❌ Processing failed: {e}")
             continue
 
-    # 创建总览
+    # Create summary
     if results_data:
         summary_path = create_summary_visualization(results_data, output_dir)
 
-        # 保存详细结果
+        # Save detailed results
         results_json = {
             'model_path': model_path,
             'timestamp': datetime.now().isoformat(),
@@ -325,14 +329,14 @@ def main():
         with open(json_path, 'w', encoding='utf-8') as f:
             json.dump(results_json, f, indent=2, ensure_ascii=False)
 
-        print(f"\n🎉 可视化完成!")
-        print(f"📁 结果保存在: {output_dir}")
-        print(f"📊 总览图: {summary_path}")
-        print(f"📋 详细结果: {json_path}")
-        print(f"🖼️ 处理图片: {len(results_data)}/20")
-        print(f"🎯 总检测数: {sum(r['num_detections'] for r in results_data)}")
+        print(f"\n🎉 Visualization completed!")
+        print(f"📁 Results saved in: {output_dir}")
+        print(f"📊 Summary chart: {summary_path}")
+        print(f"📋 Detailed results: {json_path}")
+        print(f"🖼️ Processed images: {len(results_data)}/50")
+        print(f"🎯 Total detections: {sum(r['num_detections'] for r in results_data)}")
 
-        # 显示类别统计
+        # Show class statistics
         class_counts = {}
         for result in results_data:
             for detection in result['detections']:
@@ -341,12 +345,12 @@ def main():
                     class_counts[class_name] = 0
                 class_counts[class_name] += 1
 
-        print(f"\n📋 类别检测统计:")
+        print(f"\n📋 Class Detection Statistics:")
         for class_name, count in class_counts.items():
-            print(f"   {class_name}: {count}个")
+            print(f"   {class_name}: {count}")
 
     else:
-        print("❌ 没有成功处理任何图片")
+        print("❌ No images processed successfully")
 
 if __name__ == "__main__":
     main()

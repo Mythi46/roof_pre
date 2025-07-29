@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏠 Roof Detection Results - 50 Images Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .summary-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .summary-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            display: block;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .image-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .image-info {
+            padding: 15px;
+        }
+
+        .image-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .image-details {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .detection-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 8px;
+        }
+
+        .detection-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+
+        .tag-roof { background-color: #DC143C; }
+        .tag-rice-fields { background-color: #4169E1; }
+        .tag-baren-land { background-color: #8B4513; }
+        .tag-farm { background-color: #228B22; }
+
+        .detection-count {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .class-legend {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .roof { background-color: #DC143C; }
+        .rice-fields { background-color: #4169E1; }
+        .baren-land { background-color: #8B4513; }
+        .farm { background-color: #228B22; }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 1200px;
+            max-height: 90%;
+            object-fit: contain;
+            margin-top: 2%;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #bbb;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🏠 Roof Detection Results</h1>
+            <p>Comprehensive Analysis of 50 Images using Expert Improved YOLOv8 Model</p>
+            <p><strong>Model Performance:</strong> mAP@0.5: 90.8% | Processing Date: 2025-07-29</p>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">50</div>
+                <div class="stat-label">Images Processed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">850</div>
+                <div class="stat-label">Total Detections</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">17.0</div>
+                <div class="stat-label">Avg Objects/Image</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+        </div>
+
+        <!-- Class Legend -->
+        <div class="class-legend">
+            <div class="legend-item">
+                <div class="legend-color roof"></div>
+                <span>Roof (561 - 66.0%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color rice-fields"></div>
+                <span>Rice Fields (110 - 12.9%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color baren-land"></div>
+                <span>Bare Land (101 - 11.9%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color farm"></div>
+                <span>Farm (78 - 9.2%)</span>
+            </div>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="summary-section">
+            <h2 class="section-title">📊 Detection Summary</h2>
+            <img src="detection_summary_50_images.png" alt="Detection Summary" class="summary-image">
+            <p style="text-align: center; margin-top: 15px; color: #666;">
+                Comprehensive analysis showing class distribution, detection counts, and confidence statistics for all 50 processed images.
+            </p>
+        </div>
+
+        <!-- Results Gallery -->
+        <div class="summary-section">
+            <h2 class="section-title">🖼️ Detection Results Gallery</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">
+                Click on any image to view in full size. Each image shows original vs detection results side by side.
+            </p>
+            
+            <div class="gallery" id="gallery">
+
+                <div class="image-card">
+                    <img src="result_01_pah-promenadevilla_png_jpg.rf.e6bb7919bdf681fe5d8a619bc41d41b2.png" alt="Detection Result 1" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 1</div>
+                        <div class="image-details">pah-promenadevilla</div>
+                        <div class="detection-count">Total: 24 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 24</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_02_DJI_0127_JPG.rf.cda4c278dd7cac8532950dde0944e24b.png" alt="Detection Result 2" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 2</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 1 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_03_15li_204_png.rf.18b3364dfe10f6b3100bdb59a5178a0e.png" alt="Detection Result 3" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 3</div>
+                        <div class="image-details">15li</div>
+                        <div class="detection-count">Total: 13 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 13</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_04_DJI_0800_JPG.rf.b7c40ad43db1d6d1278a4daf807888cc.png" alt="Detection Result 4" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 4</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 5 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_05_DJI_0734_JPG.rf.c116e8bf4e359c8f454919b56d297185.png" alt="Detection Result 5" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 5</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 3 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_06_DJI_0668_JPG.rf.d0813376a3a8915a168403c3aae9e63b.png" alt="Detection Result 6" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 6</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 3 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_07_DJI_0240_JPG.rf.ac44e4c1d5d0a7433a09346a1c725c81.png" alt="Detection Result 7" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 7</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 26 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 26</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_08_DJI_0093_JPG.rf.d23c13725d903a986b7e272cd827d66c.png" alt="Detection Result 8" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 8</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 9 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_09_Screenshot_24_png.rf.32f5b55c8bb3b79b86790925b3aa3ffe.png" alt="Detection Result 9" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 9</div>
+                        <div class="image-details">Screenshot</div>
+                        <div class="detection-count">Total: 4 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_10_Farm-7_39_jpg.rf.044980164827f02620b1c1ebced5f075.png" alt="Detection Result 10" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 10</div>
+                        <div class="image-details">Farm-7</div>
+                        <div class="detection-count">Total: 6 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 3</span><span class="detection-tag tag-farm">farm: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_11_aygyhiaefae_png.rf.2fec48660d29d9e063ef45100d3b6e6e.png" alt="Detection Result 11" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 11</div>
+                        <div class="image-details">aygyhiaefae</div>
+                        <div class="detection-count">Total: 1 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_12_ked-jalanawana_png_jpg.rf.59f2c287ea24d47a4853e435d0d5923c.png" alt="Detection Result 12" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 12</div>
+                        <div class="image-details">ked-jalanawana</div>
+                        <div class="detection-count">Total: 72 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 72</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_13_Farm-25_15_jpg.rf.102b6fa395ecb63e537915fcaaa737be.png" alt="Detection Result 13" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 13</div>
+                        <div class="image-details">Farm-25</div>
+                        <div class="detection-count">Total: 1 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_14_1_png.rf.89036e1da2351262e2f76cf53ef4fc6c.png" alt="Detection Result 14" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 14</div>
+                        <div class="image-details">1</div>
+                        <div class="detection-count">Total: 145 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 145</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_15_1c0437f4-1_png.rf.102e91de1be514a46a298f06eb473ee0.png" alt="Detection Result 15" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 15</div>
+                        <div class="image-details">1c0437f4-1</div>
+                        <div class="detection-count">Total: 2 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_16_cfb84b0b-e9a1-4274-89f5-1111b743cb45_png.rf.eb7e184bdcde2fb9c7d2092195a0f954.png" alt="Detection Result 16" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 16</div>
+                        <div class="image-details">cfb84b0b-e9a1-4274-89f5-1111b743cb45</div>
+                        <div class="detection-count">Total: 1 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_17_DJI_0661_JPG.rf.0c4a851200cb0ec6dda3af0ff16737f8.png" alt="Detection Result 17" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 17</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 3 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_18_DJI_0692_JPG.rf.99d2f05fe49bbae17ed7a11dc5c678d1.png" alt="Detection Result 18" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 18</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 2 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_19_Farm-6_3_jpg.rf.772b81958133ce935c9e66b3c38b42f7.png" alt="Detection Result 19" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 19</div>
+                        <div class="image-details">Farm-6</div>
+                        <div class="detection-count">Total: 7 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-farm">farm: 4</span><span class="detection-tag tag-Baren-Land">Baren-Land: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_20_kel-jalantamanfirdaus_png_jpg.rf.18282b8499a93fe5ab8d3d22771be12b.png" alt="Detection Result 20" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 20</div>
+                        <div class="image-details">kel-jalantamanfirdaus</div>
+                        <div class="detection-count">Total: 21 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 21</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_21_15li_217_png.rf.7b793b451e662daf6a4726ef7920d96b.png" alt="Detection Result 21" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 21</div>
+                        <div class="image-details">15li</div>
+                        <div class="detection-count">Total: 18 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 18</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_22_Farm-9_9_jpg.rf.d9f57fa2e515bfcae79d7edf38bd4a2c.png" alt="Detection Result 22" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 22</div>
+                        <div class="image-details">Farm-9</div>
+                        <div class="detection-count">Total: 15 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-farm">farm: 15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_23_DJI_0621_JPG.rf.16971836a963b4cf214506353432879e.png" alt="Detection Result 23" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 23</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 4 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_24_per-tamantasikindah_png_jpg.rf.958cd3f1350f58a077868d19fc511ec2.png" alt="Detection Result 24" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 24</div>
+                        <div class="image-details">per-tamantasikindah</div>
+                        <div class="detection-count">Total: 56 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 56</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_25_Farm-7_38_jpg.rf.6638edeca7ca78c2bb53d7912a34429d.png" alt="Detection Result 25" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 25</div>
+                        <div class="image-details">Farm-7</div>
+                        <div class="detection-count">Total: 7 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 2</span><span class="detection-tag tag-farm">farm: 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_26_Farm-25_10_jpg.rf.dd5e2da19f31c67acbaf0675c1783753.png" alt="Detection Result 26" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 26</div>
+                        <div class="image-details">Farm-25</div>
+                        <div class="detection-count">Total: 8 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 7</span><span class="detection-tag tag-farm">farm: 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_27_DJI_0663_JPG.rf.59f4043a1fc54104fa0eefec0ee52af4.png" alt="Detection Result 27" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 27</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 3 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_28_Farm-25_5_jpg.rf.79ab4fcc7fb1949b965e21d6e8981948.png" alt="Detection Result 28" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 28</div>
+                        <div class="image-details">Farm-25</div>
+                        <div class="detection-count">Total: 3 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 2</span><span class="detection-tag tag-farm">farm: 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_29_ked-jalananakbukit_png_jpg.rf.654711b573bee8ce8dfbb26b86ace1ca.png" alt="Detection Result 29" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 29</div>
+                        <div class="image-details">ked-jalananakbukit</div>
+                        <div class="detection-count">Total: 57 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 57</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_30_DJI_0807_JPG.rf.503465519e002f7d0d4c962d3cef4a53.png" alt="Detection Result 30" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 30</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 5 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_31_0000040_jpg.rf.75279a36f0d12e9355b0b307a257506a.png" alt="Detection Result 31" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 31</div>
+                        <div class="image-details">0000040</div>
+                        <div class="detection-count">Total: 0 objects</div>
+                        <div class="detection-tags">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_32_DJI_0506_JPG.rf.ef6f7b5703f79b791abe4205ba137a5e.png" alt="Detection Result 32" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 32</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 2 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_33_usj9_png_jpg.rf.494b247df76933146abe81999caf98ad.png" alt="Detection Result 33" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 33</div>
+                        <div class="image-details">usj9</div>
+                        <div class="detection-count">Total: 78 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 78</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_34_Farm-25_16_jpg.rf.0baf8d2ac08dc01120a878bd24a2ce17.png" alt="Detection Result 34" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 34</div>
+                        <div class="image-details">Farm-25</div>
+                        <div class="detection-count">Total: 5 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 2</span><span class="detection-tag tag-farm">farm: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_35_Farm-12_11_jpg.rf.c25aa86d731769b84fc4339141538cfa.png" alt="Detection Result 35" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 35</div>
+                        <div class="image-details">Farm-12</div>
+                        <div class="detection-count">Total: 35 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 35</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_36_DJI_0806_JPG.rf.f29387466094229516b58f6c2da45e20.png" alt="Detection Result 36" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 36</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 6 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_37_DJI_0297_JPG.rf.53dfd443d5ab666f6ec1a400b1a83d44.png" alt="Detection Result 37" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 37</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 22 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 22</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_38_DJI_0654_JPG.rf.cd246fbdd926edddfc21267a5ce909cb.png" alt="Detection Result 38" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 38</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 3 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_39_Farm-10_9_jpg.rf.c31ceb0683f28070913804e36b9ba5fd.png" alt="Detection Result 39" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 39</div>
+                        <div class="image-details">Farm-10</div>
+                        <div class="detection-count">Total: 19 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 11</span><span class="detection-tag tag-farm">farm: 8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_40_DJI_0092_JPG.rf.673c52ffe8c3b884c40f6b7e9ab9bc0e.png" alt="Detection Result 40" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 40</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 10 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_41_ce3a015a-2_png.rf.22797d220bfef65657795a6b1b7706f0.png" alt="Detection Result 41" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 41</div>
+                        <div class="image-details">ce3a015a-2</div>
+                        <div class="detection-count">Total: 6 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_42_Farm-20_1_jpg.rf.7111c59fb5bcd42ba9f1bb5f85dc24dd.png" alt="Detection Result 42" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 42</div>
+                        <div class="image-details">Farm-20</div>
+                        <div class="detection-count">Total: 9 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-farm">farm: 6</span><span class="detection-tag tag-Baren-Land">Baren-Land: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_43_d913d46d-19_png.rf.258d1a7e0622645a2933fbf186e38d2a.png" alt="Detection Result 43" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 43</div>
+                        <div class="image-details">d913d46d-19</div>
+                        <div class="detection-count">Total: 4 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_44_Farm-19_10_jpg.rf.3476cebbeabc2f7709a9dda3f85c7c85.png" alt="Detection Result 44" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 44</div>
+                        <div class="image-details">Farm-19</div>
+                        <div class="detection-count">Total: 10 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-farm">farm: 5</span><span class="detection-tag tag-Baren-Land">Baren-Land: 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_45_Farm-12_16_jpg.rf.ee8d2bca18ec0c89e507fb26fe2ff4e0.png" alt="Detection Result 45" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 45</div>
+                        <div class="image-details">Farm-12</div>
+                        <div class="detection-count">Total: 35 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 20</span><span class="detection-tag tag-farm">farm: 15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_46_kel-jalantmnkiara_png_jpg.rf.2bbaf2df562d5bca15befdd80c3a6aa7.png" alt="Detection Result 46" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 46</div>
+                        <div class="image-details">kel-jalantmnkiara</div>
+                        <div class="detection-count">Total: 56 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 56</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_47_DJI_0777_JPG.rf.9c7e87a04d35edfe1455c8192f7f0687.png" alt="Detection Result 47" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 47</div>
+                        <div class="image-details">DJI</div>
+                        <div class="detection-count">Total: 3 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-rice-fields">rice-fields: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_48_2b9d4b82-10_png.rf.e9acaf9b5c21a9620713c5c6a094c9bd.png" alt="Detection Result 48" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 48</div>
+                        <div class="image-details">2b9d4b82-10</div>
+                        <div class="detection-count">Total: 3 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-roof">roof: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_49_Farm-3_4_jpg.rf.547cb5483037a2bd26ec2f9b238586af.png" alt="Detection Result 49" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 49</div>
+                        <div class="image-details">Farm-3</div>
+                        <div class="detection-count">Total: 11 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-farm">farm: 8</span><span class="detection-tag tag-Baren-Land">Baren-Land: 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="result_50_Farm-7_27_jpg.rf.157d43049b51bf91f4002f9fe2c077f1.png" alt="Detection Result 50" onclick="openModal(this.src)">
+                    <div class="image-info">
+                        <div class="image-title">Detection Result 50</div>
+                        <div class="image-details">Farm-7</div>
+                        <div class="detection-count">Total: 8 objects</div>
+                        <div class="detection-tags">
+                            <span class="detection-tag tag-Baren-Land">Baren-Land: 4</span><span class="detection-tag tag-farm">farm: 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.getElementsByClassName('close')[0];
+
+        function openModal(src) {
+            modal.style.display = 'block';
+            modalImg.src = src;
+        }
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

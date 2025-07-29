@@ -1,0 +1,9007 @@
+{
+  "model_path": "runs/segment/improved_training_compatible/weights/best.pt",
+  "timestamp": "2025-07-29T08:52:12.278002",
+  "total_images": 50,
+  "total_detections": 850,
+  "results": [
+    {
+      "image_index": 1,
+      "image_name": "pah-promenadevilla_png_jpg.rf.e6bb7919bdf681fe5d8a619bc41d41b2.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\pah-promenadevilla_png_jpg.rf.e6bb7919bdf681fe5d8a619bc41d41b2.jpg",
+      "result_image": "result_01_pah-promenadevilla_png_jpg.rf.e6bb7919bdf681fe5d8a619bc41d41b2.png",
+      "detection_image": "detection_01_pah-promenadevilla_png_jpg.rf.e6bb7919bdf681fe5d8a619bc41d41b2.jpg",
+      "num_detections": 24,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.901971161365509,
+          "bbox": [
+            404,
+            24,
+            537,
+            88
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8957147598266602,
+          "bbox": [
+            390,
+            397,
+            463,
+            494
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8941143751144409,
+          "bbox": [
+            261,
+            399,
+            335,
+            496
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8914264440536499,
+          "bbox": [
+            198,
+            400,
+            269,
+            497
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8824610114097595,
+          "bbox": [
+            455,
+            397,
+            531,
+            492
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8779942989349365,
+          "bbox": [
+            326,
+            397,
+            399,
+            494
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8705024123191833,
+          "bbox": [
+            133,
+            401,
+            206,
+            501
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8610628843307495,
+          "bbox": [
+            246,
+            180,
+            383,
+            240
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8588882088661194,
+          "bbox": [
+            404,
+            299,
+            541,
+            356
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8579846620559692,
+          "bbox": [
+            246,
+            91,
+            383,
+            151
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8562900424003601,
+          "bbox": [
+            247,
+            136,
+            383,
+            196
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8479715585708618,
+          "bbox": [
+            401,
+            76,
+            539,
+            133
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8438851237297058,
+          "bbox": [
+            403,
+            120,
+            540,
+            180
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8437917232513428,
+          "bbox": [
+            404,
+            166,
+            542,
+            227
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8399317264556885,
+          "bbox": [
+            248,
+            226,
+            383,
+            285
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.838077187538147,
+          "bbox": [
+            403,
+            210,
+            543,
+            271
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8306882977485657,
+          "bbox": [
+            247,
+            52,
+            382,
+            107
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8282814025878906,
+          "bbox": [
+            402,
+            255,
+            543,
+            315
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8199276924133301,
+          "bbox": [
+            84,
+            435,
+            143,
+            502
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7435176968574524,
+          "bbox": [
+            292,
+            19,
+            382,
+            63
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5912166237831116,
+          "bbox": [
+            527,
+            427,
+            572,
+            490
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5736308097839355,
+          "bbox": [
+            252,
+            269,
+            386,
+            346
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.512957751750946,
+          "bbox": [
+            259,
+            294,
+            387,
+            348
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2535147964954376,
+          "bbox": [
+            251,
+            269,
+            385,
+            315
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 2,
+      "image_name": "DJI_0127_JPG.rf.cda4c278dd7cac8532950dde0944e24b.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0127_JPG.rf.cda4c278dd7cac8532950dde0944e24b.jpg",
+      "result_image": "result_02_DJI_0127_JPG.rf.cda4c278dd7cac8532950dde0944e24b.png",
+      "detection_image": "detection_02_DJI_0127_JPG.rf.cda4c278dd7cac8532950dde0944e24b.jpg",
+      "num_detections": 1,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9071215391159058,
+          "bbox": [
+            111,
+            0,
+            634,
+            636
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 3,
+      "image_name": "15li_204_png.rf.18b3364dfe10f6b3100bdb59a5178a0e.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\15li_204_png.rf.18b3364dfe10f6b3100bdb59a5178a0e.jpg",
+      "result_image": "result_03_15li_204_png.rf.18b3364dfe10f6b3100bdb59a5178a0e.png",
+      "detection_image": "detection_03_15li_204_png.rf.18b3364dfe10f6b3100bdb59a5178a0e.jpg",
+      "num_detections": 13,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.8369427919387817,
+          "bbox": [
+            454,
+            535,
+            503,
+            626
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8053663372993469,
+          "bbox": [
+            213,
+            446,
+            289,
+            503
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7799575924873352,
+          "bbox": [
+            80,
+            286,
+            157,
+            344
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.768016517162323,
+          "bbox": [
+            585,
+            325,
+            639,
+            385
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7567514777183533,
+          "bbox": [
+            135,
+            429,
+            210,
+            484
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7428604960441589,
+          "bbox": [
+            508,
+            348,
+            556,
+            437
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7242442965507507,
+          "bbox": [
+            2,
+            268,
+            79,
+            323
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6659871935844421,
+          "bbox": [
+            465,
+            443,
+            513,
+            535
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6243635416030884,
+          "bbox": [
+            159,
+            302,
+            234,
+            359
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5923137664794922,
+          "bbox": [
+            54,
+            410,
+            131,
+            465
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5285941958427429,
+          "bbox": [
+            236,
+            318,
+            313,
+            375
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4255944490432739,
+          "bbox": [
+            174,
+            592,
+            209,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.42440322041511536,
+          "bbox": [
+            632,
+            459,
+            639,
+            523
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 4,
+      "image_name": "DJI_0800_JPG.rf.b7c40ad43db1d6d1278a4daf807888cc.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0800_JPG.rf.b7c40ad43db1d6d1278a4daf807888cc.jpg",
+      "result_image": "result_04_DJI_0800_JPG.rf.b7c40ad43db1d6d1278a4daf807888cc.png",
+      "detection_image": "detection_04_DJI_0800_JPG.rf.b7c40ad43db1d6d1278a4daf807888cc.jpg",
+      "num_detections": 5,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.8882127404212952,
+          "bbox": [
+            5,
+            84,
+            640,
+            257
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8660778999328613,
+          "bbox": [
+            21,
+            231,
+            640,
+            428
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8505760431289673,
+          "bbox": [
+            12,
+            405,
+            640,
+            573
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7765969038009644,
+          "bbox": [
+            0,
+            1,
+            636,
+            110
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.6753336787223816,
+          "bbox": [
+            18,
+            548,
+            640,
+            640
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 5,
+      "image_name": "DJI_0734_JPG.rf.c116e8bf4e359c8f454919b56d297185.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0734_JPG.rf.c116e8bf4e359c8f454919b56d297185.jpg",
+      "result_image": "result_05_DJI_0734_JPG.rf.c116e8bf4e359c8f454919b56d297185.png",
+      "detection_image": "detection_05_DJI_0734_JPG.rf.c116e8bf4e359c8f454919b56d297185.jpg",
+      "num_detections": 3,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9421447515487671,
+          "bbox": [
+            259,
+            184,
+            576,
+            551
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7881348729133606,
+          "bbox": [
+            255,
+            588,
+            517,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.44081586599349976,
+          "bbox": [
+            613,
+            303,
+            639,
+            463
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 6,
+      "image_name": "DJI_0668_JPG.rf.d0813376a3a8915a168403c3aae9e63b.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0668_JPG.rf.d0813376a3a8915a168403c3aae9e63b.jpg",
+      "result_image": "result_06_DJI_0668_JPG.rf.d0813376a3a8915a168403c3aae9e63b.png",
+      "detection_image": "detection_06_DJI_0668_JPG.rf.d0813376a3a8915a168403c3aae9e63b.jpg",
+      "num_detections": 3,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9359837174415588,
+          "bbox": [
+            47,
+            0,
+            341,
+            615
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.925884485244751,
+          "bbox": [
+            238,
+            1,
+            522,
+            635
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8840490579605103,
+          "bbox": [
+            0,
+            5,
+            114,
+            491
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 7,
+      "image_name": "DJI_0240_JPG.rf.ac44e4c1d5d0a7433a09346a1c725c81.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0240_JPG.rf.ac44e4c1d5d0a7433a09346a1c725c81.jpg",
+      "result_image": "result_07_DJI_0240_JPG.rf.ac44e4c1d5d0a7433a09346a1c725c81.png",
+      "detection_image": "detection_07_DJI_0240_JPG.rf.ac44e4c1d5d0a7433a09346a1c725c81.jpg",
+      "num_detections": 26,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.964597761631012,
+          "bbox": [
+            437,
+            234,
+            576,
+            412
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9501718282699585,
+          "bbox": [
+            128,
+            532,
+            261,
+            638
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.949463963508606,
+          "bbox": [
+            159,
+            335,
+            305,
+            459
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9469798803329468,
+          "bbox": [
+            312,
+            389,
+            451,
+            498
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9413800239562988,
+          "bbox": [
+            17,
+            306,
+            148,
+            411
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9385702013969421,
+          "bbox": [
+            79,
+            104,
+            154,
+            257
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9370997548103333,
+          "bbox": [
+            560,
+            458,
+            639,
+            561
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.936731219291687,
+          "bbox": [
+            573,
+            271,
+            639,
+            437
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9350360035896301,
+          "bbox": [
+            15,
+            510,
+            123,
+            599
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9334326386451721,
+          "bbox": [
+            457,
+            433,
+            554,
+            529
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9317077994346619,
+          "bbox": [
+            85,
+            0,
+            165,
+            94
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9270502328872681,
+          "bbox": [
+            0,
+            97,
+            70,
+            241
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.922206699848175,
+          "bbox": [
+            0,
+            0,
+            80,
+            79
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9038481116294861,
+          "bbox": [
+            535,
+            0,
+            608,
+            45
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8978444337844849,
+          "bbox": [
+            7,
+            593,
+            95,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8972607851028442,
+          "bbox": [
+            268,
+            580,
+            439,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8722370266914368,
+          "bbox": [
+            615,
+            0,
+            639,
+            47
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8390927910804749,
+          "bbox": [
+            222,
+            467,
+            359,
+            543
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.837669312953949,
+          "bbox": [
+            455,
+            620,
+            516,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7796312570571899,
+          "bbox": [
+            148,
+            443,
+            224,
+            530
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7773306965827942,
+          "bbox": [
+            548,
+            555,
+            639,
+            615
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7537823915481567,
+          "bbox": [
+            364,
+            505,
+            530,
+            609
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7402856945991516,
+          "bbox": [
+            107,
+            624,
+            160,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7374442219734192,
+          "bbox": [
+            453,
+            0,
+            530,
+            225
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7361592054367065,
+          "bbox": [
+            81,
+            421,
+            135,
+            504
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.6141574382781982,
+          "bbox": [
+            6,
+            400,
+            79,
+            464
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 8,
+      "image_name": "DJI_0093_JPG.rf.d23c13725d903a986b7e272cd827d66c.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0093_JPG.rf.d23c13725d903a986b7e272cd827d66c.jpg",
+      "result_image": "result_08_DJI_0093_JPG.rf.d23c13725d903a986b7e272cd827d66c.png",
+      "detection_image": "detection_08_DJI_0093_JPG.rf.d23c13725d903a986b7e272cd827d66c.jpg",
+      "num_detections": 9,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9553265571594238,
+          "bbox": [
+            495,
+            107,
+            638,
+            489
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9421088695526123,
+          "bbox": [
+            261,
+            538,
+            434,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9350231885910034,
+          "bbox": [
+            13,
+            528,
+            238,
+            638
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.929192304611206,
+          "bbox": [
+            91,
+            112,
+            477,
+            490
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.921448290348053,
+          "bbox": [
+            462,
+            533,
+            639,
+            638
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9104039072990417,
+          "bbox": [
+            535,
+            0,
+            635,
+            65
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8993650674819946,
+          "bbox": [
+            374,
+            0,
+            515,
+            59
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8884684443473816,
+          "bbox": [
+            0,
+            376,
+            36,
+            548
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8066369295120239,
+          "bbox": [
+            0,
+            61,
+            38,
+            346
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 9,
+      "image_name": "Screenshot_24_png.rf.32f5b55c8bb3b79b86790925b3aa3ffe.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Screenshot_24_png.rf.32f5b55c8bb3b79b86790925b3aa3ffe.jpg",
+      "result_image": "result_09_Screenshot_24_png.rf.32f5b55c8bb3b79b86790925b3aa3ffe.png",
+      "detection_image": "detection_09_Screenshot_24_png.rf.32f5b55c8bb3b79b86790925b3aa3ffe.jpg",
+      "num_detections": 4,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.9489396214485168,
+          "bbox": [
+            86,
+            91,
+            567,
+            582
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5850258469581604,
+          "bbox": [
+            429,
+            393,
+            639,
+            638
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5413838624954224,
+          "bbox": [
+            0,
+            174,
+            106,
+            340
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.29770317673683167,
+          "bbox": [
+            1,
+            0,
+            316,
+            342
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 10,
+      "image_name": "Farm-7_39_jpg.rf.044980164827f02620b1c1ebced5f075.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-7_39_jpg.rf.044980164827f02620b1c1ebced5f075.jpg",
+      "result_image": "result_10_Farm-7_39_jpg.rf.044980164827f02620b1c1ebced5f075.png",
+      "detection_image": "detection_10_Farm-7_39_jpg.rf.044980164827f02620b1c1ebced5f075.jpg",
+      "num_detections": 6,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9458342790603638,
+          "bbox": [
+            280,
+            462,
+            606,
+            639
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9393083453178406,
+          "bbox": [
+            34,
+            0,
+            341,
+            404
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9364530444145203,
+          "bbox": [
+            337,
+            0,
+            413,
+            434
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9151233434677124,
+          "bbox": [
+            2,
+            275,
+            325,
+            633
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.896131694316864,
+          "bbox": [
+            403,
+            17,
+            638,
+            546
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7528312802314758,
+          "bbox": [
+            6,
+            42,
+            41,
+            253
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 11,
+      "image_name": "aygyhiaefae_png.rf.2fec48660d29d9e063ef45100d3b6e6e.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\aygyhiaefae_png.rf.2fec48660d29d9e063ef45100d3b6e6e.jpg",
+      "result_image": "result_11_aygyhiaefae_png.rf.2fec48660d29d9e063ef45100d3b6e6e.png",
+      "detection_image": "detection_11_aygyhiaefae_png.rf.2fec48660d29d9e063ef45100d3b6e6e.jpg",
+      "num_detections": 1,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.7183966040611267,
+          "bbox": [
+            156,
+            183,
+            536,
+            615
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 12,
+      "image_name": "ked-jalanawana_png_jpg.rf.59f2c287ea24d47a4853e435d0d5923c.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\ked-jalanawana_png_jpg.rf.59f2c287ea24d47a4853e435d0d5923c.jpg",
+      "result_image": "result_12_ked-jalanawana_png_jpg.rf.59f2c287ea24d47a4853e435d0d5923c.png",
+      "detection_image": "detection_12_ked-jalanawana_png_jpg.rf.59f2c287ea24d47a4853e435d0d5923c.jpg",
+      "num_detections": 72,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.8613789081573486,
+          "bbox": [
+            328,
+            33,
+            367,
+            168
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8559544086456299,
+          "bbox": [
+            0,
+            235,
+            54,
+            380
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8553911447525024,
+          "bbox": [
+            255,
+            38,
+            296,
+            160
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8521223664283752,
+          "bbox": [
+            289,
+            11,
+            335,
+            163
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8461119532585144,
+          "bbox": [
+            212,
+            34,
+            250,
+            156
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8441009521484375,
+          "bbox": [
+            106,
+            0,
+            150,
+            148
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8387665152549744,
+          "bbox": [
+            360,
+            36,
+            400,
+            171
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8332192301750183,
+          "bbox": [
+            548,
+            50,
+            587,
+            172
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8296024203300476,
+          "bbox": [
+            142,
+            22,
+            181,
+            155
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8237152099609375,
+          "bbox": [
+            434,
+            40,
+            471,
+            171
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8221597671508789,
+          "bbox": [
+            65,
+            0,
+            111,
+            147
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8209003806114197,
+          "bbox": [
+            179,
+            2,
+            225,
+            157
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8069623112678528,
+          "bbox": [
+            506,
+            51,
+            544,
+            171
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7987557649612427,
+          "bbox": [
+            403,
+            38,
+            441,
+            167
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7966424226760864,
+          "bbox": [
+            312,
+            257,
+            348,
+            387
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7961962819099426,
+          "bbox": [
+            580,
+            54,
+            615,
+            174
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7927621006965637,
+          "bbox": [
+            567,
+            268,
+            603,
+            401
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7726914286613464,
+          "bbox": [
+            277,
+            260,
+            306,
+            389
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7717782258987427,
+          "bbox": [
+            470,
+            36,
+            515,
+            170
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7550740242004395,
+          "bbox": [
+            0,
+            396,
+            41,
+            547
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7409360408782959,
+          "bbox": [
+            393,
+            440,
+            418,
+            540
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7399094700813293,
+          "bbox": [
+            262,
+            405,
+            300,
+            558
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7378769516944885,
+          "bbox": [
+            560,
+            445,
+            589,
+            545
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7208110690116882,
+          "bbox": [
+            36,
+            1,
+            75,
+            149
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6982542872428894,
+          "bbox": [
+            401,
+            261,
+            431,
+            393
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6941613554954529,
+          "bbox": [
+            305,
+            444,
+            334,
+            533
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6875282526016235,
+          "bbox": [
+            255,
+            256,
+            285,
+            385
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6847954988479614,
+          "bbox": [
+            415,
+            442,
+            440,
+            543
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6832907795906067,
+          "bbox": [
+            372,
+            441,
+            396,
+            537
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.681159496307373,
+          "bbox": [
+            108,
+            247,
+            136,
+            383
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6764520406723022,
+          "bbox": [
+            46,
+            250,
+            76,
+            381
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6606905460357666,
+          "bbox": [
+            475,
+            414,
+            520,
+            547
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6589735150337219,
+          "bbox": [
+            527,
+            267,
+            556,
+            400
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6422221660614014,
+          "bbox": [
+            245,
+            403,
+            273,
+            539
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6417783498764038,
+          "bbox": [
+            445,
+            266,
+            471,
+            400
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.641223669052124,
+          "bbox": [
+            182,
+            403,
+            211,
+            537
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6412012577056885,
+          "bbox": [
+            350,
+            438,
+            378,
+            534
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6378214359283447,
+          "bbox": [
+            170,
+            253,
+            202,
+            386
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6365098357200623,
+          "bbox": [
+            161,
+            402,
+            190,
+            537
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6326999664306641,
+          "bbox": [
+            36,
+            399,
+            65,
+            532
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6302456259727478,
+          "bbox": [
+            502,
+            265,
+            533,
+            401
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.629132866859436,
+          "bbox": [
+            128,
+            252,
+            157,
+            384
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6282724142074585,
+          "bbox": [
+            546,
+            267,
+            573,
+            399
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6193953156471252,
+          "bbox": [
+            194,
+            254,
+            219,
+            388
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.619019091129303,
+          "bbox": [
+            225,
+            410,
+            253,
+            539
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6180986762046814,
+          "bbox": [
+            484,
+            265,
+            512,
+            398
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6142569780349731,
+          "bbox": [
+            420,
+            265,
+            451,
+            398
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6135572195053101,
+          "bbox": [
+            202,
+            406,
+            231,
+            536
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6135563850402832,
+          "bbox": [
+            239,
+            253,
+            263,
+            386
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6112024188041687,
+          "bbox": [
+            78,
+            401,
+            106,
+            535
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6105407476425171,
+          "bbox": [
+            68,
+            251,
+            94,
+            381
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6062142848968506,
+          "bbox": [
+            58,
+            400,
+            86,
+            534
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5988545417785645,
+          "bbox": [
+            150,
+            252,
+            179,
+            383
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5985666513442993,
+          "bbox": [
+            217,
+            252,
+            242,
+            387
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5984960198402405,
+          "bbox": [
+            101,
+            402,
+            127,
+            536
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5967340469360352,
+          "bbox": [
+            380,
+            278,
+            405,
+            392
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5965064167976379,
+          "bbox": [
+            451,
+            442,
+            485,
+            564
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5934142470359802,
+          "bbox": [
+            342,
+            266,
+            367,
+            394
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5919736623764038,
+          "bbox": [
+            120,
+            401,
+            149,
+            536
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5875099301338196,
+          "bbox": [
+            464,
+            267,
+            489,
+            400
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5846020579338074,
+          "bbox": [
+            435,
+            441,
+            459,
+            542
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.577279806137085,
+          "bbox": [
+            518,
+            443,
+            544,
+            545
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5770936012268066,
+          "bbox": [
+            359,
+            269,
+            388,
+            395
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5770128965377808,
+          "bbox": [
+            330,
+            445,
+            357,
+            533
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5759491324424744,
+          "bbox": [
+            87,
+            246,
+            114,
+            382
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.566106379032135,
+          "bbox": [
+            141,
+            401,
+            169,
+            537
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5380434393882751,
+          "bbox": [
+            537,
+            445,
+            562,
+            545
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4909324645996094,
+          "bbox": [
+            167,
+            252,
+            192,
+            386
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.43715694546699524,
+          "bbox": [
+            522,
+            267,
+            547,
+            399
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.38161754608154297,
+          "bbox": [
+            0,
+            396,
+            24,
+            518
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2917366623878479,
+          "bbox": [
+            51,
+            399,
+            77,
+            533
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2886941134929657,
+          "bbox": [
+            162,
+            252,
+            182,
+            386
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 13,
+      "image_name": "Farm-25_15_jpg.rf.102b6fa395ecb63e537915fcaaa737be.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-25_15_jpg.rf.102b6fa395ecb63e537915fcaaa737be.jpg",
+      "result_image": "result_13_Farm-25_15_jpg.rf.102b6fa395ecb63e537915fcaaa737be.png",
+      "detection_image": "detection_13_Farm-25_15_jpg.rf.102b6fa395ecb63e537915fcaaa737be.jpg",
+      "num_detections": 1,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.629435658454895,
+          "bbox": [
+            600,
+            0,
+            639,
+            193
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 14,
+      "image_name": "1_png.rf.89036e1da2351262e2f76cf53ef4fc6c.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\1_png.rf.89036e1da2351262e2f76cf53ef4fc6c.jpg",
+      "result_image": "result_14_1_png.rf.89036e1da2351262e2f76cf53ef4fc6c.png",
+      "detection_image": "detection_14_1_png.rf.89036e1da2351262e2f76cf53ef4fc6c.jpg",
+      "num_detections": 145,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.8875280618667603,
+          "bbox": [
+            249,
+            315,
+            290,
+            366
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8778900504112244,
+          "bbox": [
+            109,
+            214,
+            154,
+            272
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8777276277542114,
+          "bbox": [
+            34,
+            288,
+            71,
+            346
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8635799288749695,
+          "bbox": [
+            565,
+            365,
+            604,
+            415
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8494411706924438,
+          "bbox": [
+            412,
+            556,
+            452,
+            615
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8447148203849792,
+          "bbox": [
+            481,
+            345,
+            512,
+            393
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8397883176803589,
+          "bbox": [
+            285,
+            457,
+            326,
+            491
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8395703434944153,
+          "bbox": [
+            382,
+            509,
+            415,
+            575
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8393750786781311,
+          "bbox": [
+            604,
+            449,
+            640,
+            512
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8368842601776123,
+          "bbox": [
+            212,
+            46,
+            257,
+            99
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8368352651596069,
+          "bbox": [
+            392,
+            257,
+            434,
+            310
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8322024941444397,
+          "bbox": [
+            65,
+            505,
+            120,
+            574
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8273946046829224,
+          "bbox": [
+            520,
+            416,
+            573,
+            471
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8179483413696289,
+          "bbox": [
+            62,
+            239,
+            108,
+            290
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8122177720069885,
+          "bbox": [
+            207,
+            111,
+            238,
+            158
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8111336827278137,
+          "bbox": [
+            92,
+            282,
+            119,
+            317
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.806955099105835,
+          "bbox": [
+            274,
+            414,
+            309,
+            457
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8039731979370117,
+          "bbox": [
+            201,
+            195,
+            245,
+            246
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8000324964523315,
+          "bbox": [
+            170,
+            258,
+            190,
+            290
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7996925115585327,
+          "bbox": [
+            268,
+            41,
+            306,
+            81
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7986965179443359,
+          "bbox": [
+            170,
+            448,
+            216,
+            500
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7975493669509888,
+          "bbox": [
+            215,
+            148,
+            249,
+            188
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7914420962333679,
+          "bbox": [
+            141,
+            25,
+            187,
+            76
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7896682024002075,
+          "bbox": [
+            85,
+            193,
+            113,
+            232
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7893343567848206,
+          "bbox": [
+            115,
+            487,
+            172,
+            552
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7881284356117249,
+          "bbox": [
+            327,
+            560,
+            365,
+            609
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7858006358146667,
+          "bbox": [
+            132,
+            266,
+            164,
+            302
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7843986749649048,
+          "bbox": [
+            174,
+            110,
+            202,
+            139
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7830442786216736,
+          "bbox": [
+            514,
+            465,
+            557,
+            511
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.781157910823822,
+          "bbox": [
+            266,
+            84,
+            300,
+            119
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7798803448677063,
+          "bbox": [
+            186,
+            307,
+            218,
+            342
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.776967465877533,
+          "bbox": [
+            248,
+            285,
+            272,
+            315
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7769214510917664,
+          "bbox": [
+            141,
+            300,
+            171,
+            330
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7762958407402039,
+          "bbox": [
+            318,
+            520,
+            342,
+            553
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7761924862861633,
+          "bbox": [
+            193,
+            338,
+            220,
+            370
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.774349570274353,
+          "bbox": [
+            13,
+            116,
+            93,
+            196
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7720158100128174,
+          "bbox": [
+            380,
+            584,
+            405,
+            617
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7715818285942078,
+          "bbox": [
+            284,
+            146,
+            312,
+            173
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7712828516960144,
+          "bbox": [
+            41,
+            43,
+            87,
+            94
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7693777084350586,
+          "bbox": [
+            349,
+            355,
+            387,
+            394
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7689284682273865,
+          "bbox": [
+            575,
+            429,
+            613,
+            474
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.76768559217453,
+          "bbox": [
+            7,
+            243,
+            38,
+            276
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7620185613632202,
+          "bbox": [
+            245,
+            102,
+            268,
+            132
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7619415521621704,
+          "bbox": [
+            168,
+            73,
+            208,
+            114
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7616698741912842,
+          "bbox": [
+            384,
+            341,
+            411,
+            375
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7602368593215942,
+          "bbox": [
+            280,
+            379,
+            311,
+            412
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7589719891548157,
+          "bbox": [
+            208,
+            378,
+            235,
+            413
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7579737305641174,
+          "bbox": [
+            287,
+            201,
+            320,
+            244
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7578038573265076,
+          "bbox": [
+            313,
+            193,
+            346,
+            239
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.755388617515564,
+          "bbox": [
+            156,
+            222,
+            181,
+            257
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.753643274307251,
+          "bbox": [
+            531,
+            369,
+            565,
+            417
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.752888560295105,
+          "bbox": [
+            330,
+            470,
+            360,
+            510
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7519345879554749,
+          "bbox": [
+            299,
+            246,
+            333,
+            295
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7484652400016785,
+          "bbox": [
+            106,
+            321,
+            141,
+            360
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.746122419834137,
+          "bbox": [
+            429,
+            362,
+            461,
+            415
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7425412535667419,
+          "bbox": [
+            198,
+            519,
+            268,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7409595847129822,
+          "bbox": [
+            220,
+            271,
+            236,
+            296
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7392445206642151,
+          "bbox": [
+            178,
+            391,
+            212,
+            428
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7374265789985657,
+          "bbox": [
+            293,
+            346,
+            333,
+            392
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7271717190742493,
+          "bbox": [
+            416,
+            276,
+            446,
+            319
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7263289093971252,
+          "bbox": [
+            250,
+            25,
+            278,
+            60
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7227606773376465,
+          "bbox": [
+            282,
+            122,
+            305,
+            148
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7226328253746033,
+          "bbox": [
+            432,
+            522,
+            460,
+            555
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7209557294845581,
+          "bbox": [
+            359,
+            190,
+            397,
+            233
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7203511595726013,
+          "bbox": [
+            421,
+            422,
+            448,
+            460
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7200133800506592,
+          "bbox": [
+            393,
+            478,
+            433,
+            507
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7158427834510803,
+          "bbox": [
+            591,
+            527,
+            614,
+            568
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7148954272270203,
+          "bbox": [
+            78,
+            350,
+            116,
+            392
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7138301134109497,
+          "bbox": [
+            13,
+            217,
+            50,
+            261
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.711357593536377,
+          "bbox": [
+            484,
+            405,
+            522,
+            443
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.706899106502533,
+          "bbox": [
+            156,
+            350,
+            175,
+            375
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7035646438598633,
+          "bbox": [
+            527,
+            151,
+            604,
+            244
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7024133801460266,
+          "bbox": [
+            198,
+            69,
+            225,
+            111
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6994965076446533,
+          "bbox": [
+            333,
+            288,
+            370,
+            327
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6992301940917969,
+          "bbox": [
+            209,
+            9,
+            234,
+            35
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.695225715637207,
+          "bbox": [
+            399,
+            360,
+            429,
+            400
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6938409805297852,
+          "bbox": [
+            261,
+            212,
+            297,
+            260
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6912067532539368,
+          "bbox": [
+            300,
+            83,
+            327,
+            111
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6901400089263916,
+          "bbox": [
+            323,
+            425,
+            358,
+            452
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6838123202323914,
+          "bbox": [
+            251,
+            130,
+            281,
+            156
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6819401383399963,
+          "bbox": [
+            356,
+            319,
+            379,
+            347
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6785271167755127,
+          "bbox": [
+            0,
+            282,
+            23,
+            318
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.675067126750946,
+          "bbox": [
+            542,
+            338,
+            574,
+            376
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6744652986526489,
+          "bbox": [
+            308,
+            323,
+            328,
+            347
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.672648549079895,
+          "bbox": [
+            260,
+            150,
+            290,
+            190
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6706985831260681,
+          "bbox": [
+            51,
+            409,
+            77,
+            443
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6644815802574158,
+          "bbox": [
+            181,
+            286,
+            207,
+            316
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6631367206573486,
+          "bbox": [
+            274,
+            272,
+            320,
+            328
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6605123281478882,
+          "bbox": [
+            388,
+            409,
+            429,
+            453
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6472554802894592,
+          "bbox": [
+            443,
+            434,
+            501,
+            487
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6286277174949646,
+          "bbox": [
+            502,
+            533,
+            522,
+            559
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6167406439781189,
+          "bbox": [
+            436,
+            331,
+            460,
+            365
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6162500977516174,
+          "bbox": [
+            188,
+            165,
+            223,
+            207
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6055696606636047,
+          "bbox": [
+            517,
+            0,
+            591,
+            43
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6015722751617432,
+          "bbox": [
+            2,
+            263,
+            31,
+            294
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5795295834541321,
+          "bbox": [
+            270,
+            579,
+            304,
+            617
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5795184373855591,
+          "bbox": [
+            325,
+            449,
+            369,
+            469
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5790985822677612,
+          "bbox": [
+            343,
+            372,
+            376,
+            405
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5773665308952332,
+          "bbox": [
+            449,
+            292,
+            478,
+            335
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5749503970146179,
+          "bbox": [
+            0,
+            38,
+            26,
+            73
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5586981773376465,
+          "bbox": [
+            561,
+            530,
+            594,
+            568
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5467965602874756,
+          "bbox": [
+            168,
+            379,
+            191,
+            404
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.545498788356781,
+          "bbox": [
+            59,
+            31,
+            95,
+            67
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.543125331401825,
+          "bbox": [
+            153,
+            318,
+            181,
+            352
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5413423180580139,
+          "bbox": [
+            0,
+            191,
+            11,
+            227
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5204969644546509,
+          "bbox": [
+            7,
+            389,
+            37,
+            448
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5172936916351318,
+          "bbox": [
+            21,
+            482,
+            44,
+            521
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5074881315231323,
+          "bbox": [
+            328,
+            379,
+            369,
+            417
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5024456977844238,
+          "bbox": [
+            319,
+            335,
+            336,
+            361
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.49450039863586426,
+          "bbox": [
+            466,
+            391,
+            492,
+            430
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4835294783115387,
+          "bbox": [
+            524,
+            529,
+            543,
+            570
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4766090512275696,
+          "bbox": [
+            137,
+            629,
+            168,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.47164860367774963,
+          "bbox": [
+            620,
+            424,
+            640,
+            452
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4566614031791687,
+          "bbox": [
+            93,
+            31,
+            123,
+            84
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4548287093639374,
+          "bbox": [
+            570,
+            577,
+            599,
+            606
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4522196650505066,
+          "bbox": [
+            451,
+            384,
+            473,
+            424
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4148421287536621,
+          "bbox": [
+            25,
+            78,
+            65,
+            122
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4109117388725281,
+          "bbox": [
+            311,
+            509,
+            330,
+            529
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.40902188420295715,
+          "bbox": [
+            244,
+            629,
+            271,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.40323132276535034,
+          "bbox": [
+            326,
+            402,
+            360,
+            430
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.39796435832977295,
+          "bbox": [
+            309,
+            148,
+            329,
+            168
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3973090946674347,
+          "bbox": [
+            0,
+            148,
+            37,
+            203
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3930496275424957,
+          "bbox": [
+            621,
+            575,
+            639,
+            598
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.39286303520202637,
+          "bbox": [
+            275,
+            287,
+            309,
+            327
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3872683048248291,
+          "bbox": [
+            287,
+            273,
+            319,
+            311
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3786163330078125,
+          "bbox": [
+            284,
+            603,
+            323,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.37720444798469543,
+          "bbox": [
+            458,
+            439,
+            501,
+            488
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3695175349712372,
+          "bbox": [
+            621,
+            563,
+            640,
+            599
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.35738900303840637,
+          "bbox": [
+            313,
+            325,
+            339,
+            361
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3381020426750183,
+          "bbox": [
+            152,
+            322,
+            170,
+            353
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3252527415752411,
+          "bbox": [
+            35,
+            441,
+            61,
+            486
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3227657675743103,
+          "bbox": [
+            22,
+            360,
+            42,
+            394
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3198995590209961,
+          "bbox": [
+            619,
+            537,
+            639,
+            563
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.31222566962242126,
+          "bbox": [
+            120,
+            365,
+            146,
+            392
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3115461468696594,
+          "bbox": [
+            70,
+            96,
+            104,
+            138
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3105262219905853,
+          "bbox": [
+            477,
+            526,
+            501,
+            546
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.30252036452293396,
+          "bbox": [
+            162,
+            319,
+            181,
+            349
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2887446880340576,
+          "bbox": [
+            402,
+            259,
+            433,
+            311
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.28458553552627563,
+          "bbox": [
+            0,
+            317,
+            13,
+            350
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.28427770733833313,
+          "bbox": [
+            118,
+            363,
+            165,
+            437
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2730361819267273,
+          "bbox": [
+            327,
+            135,
+            360,
+            178
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2682186961174011,
+          "bbox": [
+            340,
+            191,
+            365,
+            222
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2613399922847748,
+          "bbox": [
+            302,
+            106,
+            337,
+            142
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2565824091434479,
+          "bbox": [
+            133,
+            381,
+            165,
+            436
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2553502917289734,
+          "bbox": [
+            446,
+            435,
+            522,
+            496
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 15,
+      "image_name": "1c0437f4-1_png.rf.102e91de1be514a46a298f06eb473ee0.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\1c0437f4-1_png.rf.102e91de1be514a46a298f06eb473ee0.jpg",
+      "result_image": "result_15_1c0437f4-1_png.rf.102e91de1be514a46a298f06eb473ee0.png",
+      "detection_image": "detection_15_1c0437f4-1_png.rf.102e91de1be514a46a298f06eb473ee0.jpg",
+      "num_detections": 2,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.9372447729110718,
+          "bbox": [
+            359,
+            104,
+            622,
+            614
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9159206748008728,
+          "bbox": [
+            3,
+            153,
+            364,
+            542
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 16,
+      "image_name": "cfb84b0b-e9a1-4274-89f5-1111b743cb45_png.rf.eb7e184bdcde2fb9c7d2092195a0f954.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\cfb84b0b-e9a1-4274-89f5-1111b743cb45_png.rf.eb7e184bdcde2fb9c7d2092195a0f954.jpg",
+      "result_image": "result_16_cfb84b0b-e9a1-4274-89f5-1111b743cb45_png.rf.eb7e184bdcde2fb9c7d2092195a0f954.png",
+      "detection_image": "detection_16_cfb84b0b-e9a1-4274-89f5-1111b743cb45_png.rf.eb7e184bdcde2fb9c7d2092195a0f954.jpg",
+      "num_detections": 1,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.922499418258667,
+          "bbox": [
+            41,
+            240,
+            447,
+            489
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 17,
+      "image_name": "DJI_0661_JPG.rf.0c4a851200cb0ec6dda3af0ff16737f8.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0661_JPG.rf.0c4a851200cb0ec6dda3af0ff16737f8.jpg",
+      "result_image": "result_17_DJI_0661_JPG.rf.0c4a851200cb0ec6dda3af0ff16737f8.png",
+      "detection_image": "detection_17_DJI_0661_JPG.rf.0c4a851200cb0ec6dda3af0ff16737f8.jpg",
+      "num_detections": 3,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9424803853034973,
+          "bbox": [
+            99,
+            13,
+            239,
+            467
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9356825351715088,
+          "bbox": [
+            219,
+            4,
+            374,
+            488
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9257972240447998,
+          "bbox": [
+            346,
+            3,
+            464,
+            500
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 18,
+      "image_name": "DJI_0692_JPG.rf.99d2f05fe49bbae17ed7a11dc5c678d1.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0692_JPG.rf.99d2f05fe49bbae17ed7a11dc5c678d1.jpg",
+      "result_image": "result_18_DJI_0692_JPG.rf.99d2f05fe49bbae17ed7a11dc5c678d1.png",
+      "detection_image": "detection_18_DJI_0692_JPG.rf.99d2f05fe49bbae17ed7a11dc5c678d1.jpg",
+      "num_detections": 2,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9496482610702515,
+          "bbox": [
+            77,
+            0,
+            530,
+            620
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9102935194969177,
+          "bbox": [
+            1,
+            73,
+            229,
+            639
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 19,
+      "image_name": "Farm-6_3_jpg.rf.772b81958133ce935c9e66b3c38b42f7.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-6_3_jpg.rf.772b81958133ce935c9e66b3c38b42f7.jpg",
+      "result_image": "result_19_Farm-6_3_jpg.rf.772b81958133ce935c9e66b3c38b42f7.png",
+      "detection_image": "detection_19_Farm-6_3_jpg.rf.772b81958133ce935c9e66b3c38b42f7.jpg",
+      "num_detections": 7,
+      "detections": [
+        {
+          "class": "farm",
+          "confidence": 0.916134238243103,
+          "bbox": [
+            114,
+            547,
+            274,
+            639
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8803901076316833,
+          "bbox": [
+            207,
+            497,
+            637,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.7975378036499023,
+          "bbox": [
+            2,
+            260,
+            205,
+            501
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.6552377343177795,
+          "bbox": [
+            210,
+            275,
+            636,
+            445
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.5403494238853455,
+          "bbox": [
+            572,
+            320,
+            639,
+            442
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.35938581824302673,
+          "bbox": [
+            190,
+            369,
+            605,
+            497
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.33750396966934204,
+          "bbox": [
+            0,
+            0,
+            631,
+            297
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 20,
+      "image_name": "kel-jalantamanfirdaus_png_jpg.rf.18282b8499a93fe5ab8d3d22771be12b.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\kel-jalantamanfirdaus_png_jpg.rf.18282b8499a93fe5ab8d3d22771be12b.jpg",
+      "result_image": "result_20_kel-jalantamanfirdaus_png_jpg.rf.18282b8499a93fe5ab8d3d22771be12b.png",
+      "detection_image": "detection_20_kel-jalantamanfirdaus_png_jpg.rf.18282b8499a93fe5ab8d3d22771be12b.jpg",
+      "num_detections": 21,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.8914086222648621,
+          "bbox": [
+            255,
+            197,
+            353,
+            371
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.880149781703949,
+          "bbox": [
+            332,
+            423,
+            424,
+            603
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8788962960243225,
+          "bbox": [
+            327,
+            246,
+            423,
+            399
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8767844438552856,
+          "bbox": [
+            395,
+            456,
+            491,
+            604
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8767654895782471,
+          "bbox": [
+            156,
+            157,
+            263,
+            359
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.873647153377533,
+          "bbox": [
+            22,
+            253,
+            139,
+            451
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8718627095222473,
+          "bbox": [
+            218,
+            368,
+            307,
+            535
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.869736909866333,
+          "bbox": [
+            304,
+            72,
+            386,
+            220
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8679761290550232,
+          "bbox": [
+            92,
+            316,
+            180,
+            475
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8669349551200867,
+          "bbox": [
+            472,
+            461,
+            556,
+            621
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8644647002220154,
+          "bbox": [
+            531,
+            170,
+            623,
+            328
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.863884449005127,
+          "bbox": [
+            155,
+            336,
+            242,
+            490
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8626390099525452,
+          "bbox": [
+            138,
+            0,
+            236,
+            160
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8625772595405579,
+          "bbox": [
+            431,
+            257,
+            527,
+            457
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8558588624000549,
+          "bbox": [
+            89,
+            138,
+            201,
+            297
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8410347700119019,
+          "bbox": [
+            200,
+            28,
+            292,
+            177
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8408970236778259,
+          "bbox": [
+            462,
+            135,
+            553,
+            300
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8338423371315002,
+          "bbox": [
+            366,
+            100,
+            460,
+            258
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7792448401451111,
+          "bbox": [
+            497,
+            307,
+            620,
+            474
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7596379518508911,
+          "bbox": [
+            277,
+            413,
+            365,
+            555
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3068390190601349,
+          "bbox": [
+            257,
+            411,
+            365,
+            601
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 21,
+      "image_name": "15li_217_png.rf.7b793b451e662daf6a4726ef7920d96b.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\15li_217_png.rf.7b793b451e662daf6a4726ef7920d96b.jpg",
+      "result_image": "result_21_15li_217_png.rf.7b793b451e662daf6a4726ef7920d96b.png",
+      "detection_image": "detection_21_15li_217_png.rf.7b793b451e662daf6a4726ef7920d96b.jpg",
+      "num_detections": 18,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.8909881711006165,
+          "bbox": [
+            11,
+            322,
+            67,
+            461
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8742749691009521,
+          "bbox": [
+            298,
+            465,
+            351,
+            600
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8697577118873596,
+          "bbox": [
+            103,
+            133,
+            157,
+            257
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8587731719017029,
+          "bbox": [
+            378,
+            518,
+            488,
+            640
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8188498020172119,
+          "bbox": [
+            0,
+            469,
+            30,
+            564
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.813471794128418,
+          "bbox": [
+            185,
+            534,
+            265,
+            605
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7910991311073303,
+          "bbox": [
+            219,
+            202,
+            274,
+            337
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7823228240013123,
+          "bbox": [
+            127,
+            395,
+            213,
+            493
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7490748167037964,
+          "bbox": [
+            529,
+            351,
+            580,
+            468
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6614598035812378,
+          "bbox": [
+            55,
+            526,
+            136,
+            597
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6122320890426636,
+          "bbox": [
+            251,
+            58,
+            306,
+            182
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5761104226112366,
+          "bbox": [
+            137,
+            25,
+            225,
+            125
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5660147666931152,
+          "bbox": [
+            565,
+            258,
+            639,
+            356
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.47610828280448914,
+          "bbox": [
+            567,
+            257,
+            639,
+            329
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.46725258231163025,
+          "bbox": [
+            138,
+            25,
+            222,
+            99
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4549451470375061,
+          "bbox": [
+            52,
+            6,
+            117,
+            43
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.37431958317756653,
+          "bbox": [
+            48,
+            7,
+            119,
+            76
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3073106110095978,
+          "bbox": [
+            128,
+            394,
+            209,
+            465
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 22,
+      "image_name": "Farm-9_9_jpg.rf.d9f57fa2e515bfcae79d7edf38bd4a2c.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-9_9_jpg.rf.d9f57fa2e515bfcae79d7edf38bd4a2c.jpg",
+      "result_image": "result_22_Farm-9_9_jpg.rf.d9f57fa2e515bfcae79d7edf38bd4a2c.png",
+      "detection_image": "detection_22_Farm-9_9_jpg.rf.d9f57fa2e515bfcae79d7edf38bd4a2c.jpg",
+      "num_detections": 15,
+      "detections": [
+        {
+          "class": "farm",
+          "confidence": 0.9420270919799805,
+          "bbox": [
+            411,
+            2,
+            634,
+            169
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9338772296905518,
+          "bbox": [
+            8,
+            5,
+            397,
+            190
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8851020932197571,
+          "bbox": [
+            215,
+            180,
+            400,
+            354
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8826824426651001,
+          "bbox": [
+            17,
+            192,
+            212,
+            363
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8823287487030029,
+          "bbox": [
+            229,
+            529,
+            421,
+            638
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8634621500968933,
+          "bbox": [
+            34,
+            540,
+            225,
+            639
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8603753447532654,
+          "bbox": [
+            34,
+            366,
+            222,
+            540
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8542314767837524,
+          "bbox": [
+            420,
+            518,
+            615,
+            636
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8498462438583374,
+          "bbox": [
+            222,
+            345,
+            638,
+            533
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.77802574634552,
+          "bbox": [
+            413,
+            172,
+            637,
+            345
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7734646201133728,
+          "bbox": [
+            2,
+            374,
+            32,
+            539
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7410410046577454,
+          "bbox": [
+            8,
+            546,
+            37,
+            639
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.575917661190033,
+          "bbox": [
+            0,
+            228,
+            27,
+            364
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.5196217894554138,
+          "bbox": [
+            611,
+            518,
+            639,
+            628
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.35725200176239014,
+          "bbox": [
+            602,
+            220,
+            639,
+            336
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 23,
+      "image_name": "DJI_0621_JPG.rf.16971836a963b4cf214506353432879e.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0621_JPG.rf.16971836a963b4cf214506353432879e.jpg",
+      "result_image": "result_23_DJI_0621_JPG.rf.16971836a963b4cf214506353432879e.png",
+      "detection_image": "detection_23_DJI_0621_JPG.rf.16971836a963b4cf214506353432879e.jpg",
+      "num_detections": 4,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9203214645385742,
+          "bbox": [
+            25,
+            0,
+            183,
+            634
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9154806733131409,
+          "bbox": [
+            180,
+            0,
+            289,
+            637
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.643998384475708,
+          "bbox": [
+            273,
+            459,
+            471,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.5240935683250427,
+          "bbox": [
+            0,
+            31,
+            21,
+            640
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 24,
+      "image_name": "per-tamantasikindah_png_jpg.rf.958cd3f1350f58a077868d19fc511ec2.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\per-tamantasikindah_png_jpg.rf.958cd3f1350f58a077868d19fc511ec2.jpg",
+      "result_image": "result_24_per-tamantasikindah_png_jpg.rf.958cd3f1350f58a077868d19fc511ec2.png",
+      "detection_image": "detection_24_per-tamantasikindah_png_jpg.rf.958cd3f1350f58a077868d19fc511ec2.jpg",
+      "num_detections": 56,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.9013766050338745,
+          "bbox": [
+            335,
+            255,
+            433,
+            386
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8815168738365173,
+          "bbox": [
+            474,
+            238,
+            629,
+            329
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8735660910606384,
+          "bbox": [
+            309,
+            252,
+            353,
+            385
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8584070801734924,
+          "bbox": [
+            486,
+            192,
+            637,
+            292
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8506960272789001,
+          "bbox": [
+            278,
+            251,
+            325,
+            383
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8460729122161865,
+          "bbox": [
+            369,
+            126,
+            427,
+            254
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8409541249275208,
+          "bbox": [
+            85,
+            105,
+            128,
+            228
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8292467594146729,
+          "bbox": [
+            259,
+            117,
+            298,
+            243
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.822318971157074,
+          "bbox": [
+            441,
+            357,
+            594,
+            454
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8213018774986267,
+          "bbox": [
+            68,
+            231,
+            127,
+            353
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8177179098129272,
+          "bbox": [
+            145,
+            108,
+            184,
+            235
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.806392252445221,
+          "bbox": [
+            203,
+            114,
+            242,
+            239
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8043930530548096,
+          "bbox": [
+            116,
+            106,
+            158,
+            232
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7980631589889526,
+          "bbox": [
+            468,
+            274,
+            583,
+            348
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7976811528205872,
+          "bbox": [
+            402,
+            440,
+            499,
+            585
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7965213060379028,
+          "bbox": [
+            317,
+            123,
+            354,
+            248
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.795531690120697,
+          "bbox": [
+            319,
+            434,
+            355,
+            596
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7944389581680298,
+          "bbox": [
+            231,
+            115,
+            269,
+            241
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7910415530204773,
+          "bbox": [
+            288,
+            120,
+            324,
+            245
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7889996767044067,
+          "bbox": [
+            427,
+            389,
+            567,
+            477
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7872287034988403,
+          "bbox": [
+            173,
+            111,
+            213,
+            236
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7850950360298157,
+          "bbox": [
+            462,
+            303,
+            568,
+            369
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7849844098091125,
+          "bbox": [
+            255,
+            248,
+            294,
+            373
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7789803743362427,
+          "bbox": [
+            459,
+            335,
+            592,
+            407
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7787724137306213,
+          "bbox": [
+            346,
+            122,
+            384,
+            250
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7778913378715515,
+          "bbox": [
+            347,
+            436,
+            381,
+            560
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7672278881072998,
+          "bbox": [
+            228,
+            247,
+            268,
+            368
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.755486249923706,
+          "bbox": [
+            197,
+            423,
+            246,
+            589
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7552453279495239,
+          "bbox": [
+            0,
+            408,
+            48,
+            544
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7515521049499512,
+          "bbox": [
+            376,
+            437,
+            413,
+            560
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7382018566131592,
+          "bbox": [
+            426,
+            429,
+            569,
+            521
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7327675819396973,
+          "bbox": [
+            61,
+            410,
+            98,
+            520
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7106704115867615,
+          "bbox": [
+            35,
+            408,
+            79,
+            521
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.709396481513977,
+          "bbox": [
+            291,
+            433,
+            326,
+            596
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6866886615753174,
+          "bbox": [
+            147,
+            423,
+            183,
+            557
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6637421250343323,
+          "bbox": [
+            200,
+            243,
+            241,
+            370
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6225317120552063,
+          "bbox": [
+            255,
+            427,
+            305,
+            599
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5930773615837097,
+          "bbox": [
+            232,
+            425,
+            272,
+            569
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.590607225894928,
+          "bbox": [
+            131,
+            237,
+            172,
+            371
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5805262923240662,
+          "bbox": [
+            171,
+            240,
+            219,
+            371
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5674533843994141,
+          "bbox": [
+            172,
+            422,
+            210,
+            572
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5484282970428467,
+          "bbox": [
+            25,
+            103,
+            97,
+            224
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5052281618118286,
+          "bbox": [
+            51,
+            105,
+            97,
+            225
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4976949691772461,
+          "bbox": [
+            162,
+            239,
+            207,
+            372
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.48186567425727844,
+          "bbox": [
+            86,
+            413,
+            126,
+            522
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4801027178764343,
+          "bbox": [
+            160,
+            239,
+            192,
+            372
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4388817250728607,
+          "bbox": [
+            121,
+            420,
+            154,
+            530
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4285556375980377,
+          "bbox": [
+            113,
+            236,
+            146,
+            353
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.34584736824035645,
+          "bbox": [
+            116,
+            418,
+            154,
+            556
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.32329294085502625,
+          "bbox": [
+            135,
+            238,
+            187,
+            372
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.321048378944397,
+          "bbox": [
+            115,
+            236,
+            169,
+            369
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.31872671842575073,
+          "bbox": [
+            33,
+            408,
+            79,
+            561
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.31544414162635803,
+          "bbox": [
+            88,
+            413,
+            134,
+            556
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.28532809019088745,
+          "bbox": [
+            615,
+            29,
+            639,
+            61
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2698037326335907,
+          "bbox": [
+            0,
+            411,
+            35,
+            534
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.26596227288246155,
+          "bbox": [
+            213,
+            245,
+            242,
+            369
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 25,
+      "image_name": "Farm-7_38_jpg.rf.6638edeca7ca78c2bb53d7912a34429d.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-7_38_jpg.rf.6638edeca7ca78c2bb53d7912a34429d.jpg",
+      "result_image": "result_25_Farm-7_38_jpg.rf.6638edeca7ca78c2bb53d7912a34429d.png",
+      "detection_image": "detection_25_Farm-7_38_jpg.rf.6638edeca7ca78c2bb53d7912a34429d.jpg",
+      "num_detections": 7,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9484847784042358,
+          "bbox": [
+            307,
+            216,
+            482,
+            638
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9413703083992004,
+          "bbox": [
+            4,
+            406,
+            365,
+            639
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9378561973571777,
+          "bbox": [
+            263,
+            39,
+            639,
+            331
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9293932914733887,
+          "bbox": [
+            481,
+            303,
+            634,
+            638
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8469434976577759,
+          "bbox": [
+            0,
+            91,
+            317,
+            495
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.43018510937690735,
+          "bbox": [
+            29,
+            0,
+            572,
+            101
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.33673349022865295,
+          "bbox": [
+            171,
+            0,
+            264,
+            99
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 26,
+      "image_name": "Farm-25_10_jpg.rf.dd5e2da19f31c67acbaf0675c1783753.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-25_10_jpg.rf.dd5e2da19f31c67acbaf0675c1783753.jpg",
+      "result_image": "result_26_Farm-25_10_jpg.rf.dd5e2da19f31c67acbaf0675c1783753.png",
+      "detection_image": "detection_26_Farm-25_10_jpg.rf.dd5e2da19f31c67acbaf0675c1783753.jpg",
+      "num_detections": 8,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9791497588157654,
+          "bbox": [
+            345,
+            204,
+            637,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9663995504379272,
+          "bbox": [
+            7,
+            318,
+            386,
+            640
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9526203274726868,
+          "bbox": [
+            0,
+            21,
+            100,
+            370
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9404945969581604,
+          "bbox": [
+            421,
+            12,
+            638,
+            135
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9268436431884766,
+          "bbox": [
+            97,
+            126,
+            254,
+            328
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8762612342834473,
+          "bbox": [
+            185,
+            0,
+            464,
+            304
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.4001564681529999,
+          "bbox": [
+            112,
+            0,
+            256,
+            11
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.373652845621109,
+          "bbox": [
+            390,
+            599,
+            433,
+            639
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 27,
+      "image_name": "DJI_0663_JPG.rf.59f4043a1fc54104fa0eefec0ee52af4.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0663_JPG.rf.59f4043a1fc54104fa0eefec0ee52af4.jpg",
+      "result_image": "result_27_DJI_0663_JPG.rf.59f4043a1fc54104fa0eefec0ee52af4.png",
+      "detection_image": "detection_27_DJI_0663_JPG.rf.59f4043a1fc54104fa0eefec0ee52af4.jpg",
+      "num_detections": 3,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9620753526687622,
+          "bbox": [
+            346,
+            0,
+            498,
+            221
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9504162669181824,
+          "bbox": [
+            221,
+            0,
+            388,
+            276
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9298940896987915,
+          "bbox": [
+            140,
+            17,
+            267,
+            319
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 28,
+      "image_name": "Farm-25_5_jpg.rf.79ab4fcc7fb1949b965e21d6e8981948.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-25_5_jpg.rf.79ab4fcc7fb1949b965e21d6e8981948.jpg",
+      "result_image": "result_28_Farm-25_5_jpg.rf.79ab4fcc7fb1949b965e21d6e8981948.png",
+      "detection_image": "detection_28_Farm-25_5_jpg.rf.79ab4fcc7fb1949b965e21d6e8981948.jpg",
+      "num_detections": 3,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8982685208320618,
+          "bbox": [
+            560,
+            90,
+            639,
+            335
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.6755521297454834,
+          "bbox": [
+            0,
+            0,
+            619,
+            159
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.5236101746559143,
+          "bbox": [
+            515,
+            499,
+            639,
+            634
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 29,
+      "image_name": "ked-jalananakbukit_png_jpg.rf.654711b573bee8ce8dfbb26b86ace1ca.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\ked-jalananakbukit_png_jpg.rf.654711b573bee8ce8dfbb26b86ace1ca.jpg",
+      "result_image": "result_29_ked-jalananakbukit_png_jpg.rf.654711b573bee8ce8dfbb26b86ace1ca.png",
+      "detection_image": "detection_29_ked-jalananakbukit_png_jpg.rf.654711b573bee8ce8dfbb26b86ace1ca.jpg",
+      "num_detections": 57,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.8904402852058411,
+          "bbox": [
+            60,
+            390,
+            113,
+            445
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8862650990486145,
+          "bbox": [
+            156,
+            12,
+            233,
+            85
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8784624934196472,
+          "bbox": [
+            467,
+            132,
+            545,
+            186
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8760137557983398,
+          "bbox": [
+            147,
+            436,
+            189,
+            493
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8757003545761108,
+          "bbox": [
+            227,
+            130,
+            295,
+            186
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8741193413734436,
+          "bbox": [
+            112,
+            438,
+            147,
+            495
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8738023042678833,
+          "bbox": [
+            480,
+            303,
+            553,
+            353
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.873297929763794,
+          "bbox": [
+            188,
+            436,
+            227,
+            492
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8719278573989868,
+          "bbox": [
+            551,
+            248,
+            608,
+            296
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8701971173286438,
+          "bbox": [
+            91,
+            250,
+            143,
+            321
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8692880272865295,
+          "bbox": [
+            484,
+            408,
+            558,
+            456
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8665075302124023,
+          "bbox": [
+            473,
+            239,
+            550,
+            291
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8641352653503418,
+          "bbox": [
+            131,
+            63,
+            197,
+            127
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8638478517532349,
+          "bbox": [
+            255,
+            244,
+            300,
+            313
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8617948889732361,
+          "bbox": [
+            332,
+            241,
+            392,
+            310
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.860672116279602,
+          "bbox": [
+            258,
+            312,
+            298,
+            366
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8588525056838989,
+          "bbox": [
+            305,
+            430,
+            346,
+            485
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8573184609413147,
+          "bbox": [
+            176,
+            248,
+            220,
+            317
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8550723791122437,
+          "bbox": [
+            226,
+            434,
+            267,
+            488
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8542245626449585,
+          "bbox": [
+            554,
+            308,
+            609,
+            352
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.853476345539093,
+          "bbox": [
+            216,
+            246,
+            261,
+            315
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.852834165096283,
+          "bbox": [
+            63,
+            444,
+            113,
+            495
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.852799654006958,
+          "bbox": [
+            299,
+            313,
+            340,
+            363
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8527851700782776,
+          "bbox": [
+            138,
+            249,
+            183,
+            318
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8523602485656738,
+          "bbox": [
+            472,
+            172,
+            547,
+            219
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8515880107879639,
+          "bbox": [
+            96,
+            321,
+            144,
+            372
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8489081263542175,
+          "bbox": [
+            160,
+            90,
+            227,
+            150
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8480411171913147,
+          "bbox": [
+            145,
+            390,
+            187,
+            437
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8475754857063293,
+          "bbox": [
+            345,
+            383,
+            397,
+            433
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8469831943511963,
+          "bbox": [
+            482,
+            343,
+            555,
+            387
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8439995050430298,
+          "bbox": [
+            472,
+            205,
+            547,
+            253
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8438556790351868,
+          "bbox": [
+            291,
+            113,
+            353,
+            170
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8427243828773499,
+          "bbox": [
+            483,
+            375,
+            556,
+            420
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8413548469543457,
+          "bbox": [
+            545,
+            137,
+            602,
+            182
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8409639000892639,
+          "bbox": [
+            223,
+            318,
+            261,
+            367
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8363276720046997,
+          "bbox": [
+            139,
+            318,
+            182,
+            370
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8362240195274353,
+          "bbox": [
+            290,
+            238,
+            339,
+            314
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8349012136459351,
+          "bbox": [
+            203,
+            34,
+            263,
+            106
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8347522616386414,
+          "bbox": [
+            559,
+            414,
+            613,
+            460
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8344280123710632,
+          "bbox": [
+            187,
+            389,
+            228,
+            437
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8335205912590027,
+          "bbox": [
+            345,
+            431,
+            394,
+            481
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8303337097167969,
+          "bbox": [
+            229,
+            53,
+            294,
+            127
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8294715881347656,
+          "bbox": [
+            183,
+            318,
+            223,
+            368
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8265106081962585,
+          "bbox": [
+            266,
+            75,
+            325,
+            149
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8254257440567017,
+          "bbox": [
+            191,
+            109,
+            258,
+            171
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8247948288917542,
+          "bbox": [
+            226,
+            389,
+            266,
+            437
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8217823505401611,
+          "bbox": [
+            304,
+            381,
+            344,
+            431
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8142784833908081,
+          "bbox": [
+            262,
+            379,
+            304,
+            430
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8078965544700623,
+          "bbox": [
+            266,
+            433,
+            308,
+            486
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8025164604187012,
+          "bbox": [
+            557,
+            349,
+            610,
+            388
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7990842461585999,
+          "bbox": [
+            111,
+            389,
+            146,
+            437
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7799605131149292,
+          "bbox": [
+            547,
+            179,
+            603,
+            217
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7790753841400146,
+          "bbox": [
+            558,
+            383,
+            611,
+            420
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7554689645767212,
+          "bbox": [
+            548,
+            213,
+            604,
+            249
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6603724360466003,
+          "bbox": [
+            340,
+            311,
+            381,
+            362
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.34406575560569763,
+          "bbox": [
+            339,
+            310,
+            426,
+            363
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.26222625374794006,
+          "bbox": [
+            378,
+            319,
+            424,
+            361
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 30,
+      "image_name": "DJI_0807_JPG.rf.503465519e002f7d0d4c962d3cef4a53.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0807_JPG.rf.503465519e002f7d0d4c962d3cef4a53.jpg",
+      "result_image": "result_30_DJI_0807_JPG.rf.503465519e002f7d0d4c962d3cef4a53.png",
+      "detection_image": "detection_30_DJI_0807_JPG.rf.503465519e002f7d0d4c962d3cef4a53.jpg",
+      "num_detections": 5,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.8762319087982178,
+          "bbox": [
+            5,
+            107,
+            640,
+            276
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8550072908401489,
+          "bbox": [
+            16,
+            259,
+            640,
+            423
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8403931856155396,
+          "bbox": [
+            9,
+            412,
+            640,
+            571
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7627271413803101,
+          "bbox": [
+            0,
+            0,
+            624,
+            125
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.6850660443305969,
+          "bbox": [
+            16,
+            551,
+            640,
+            640
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 31,
+      "image_name": "0000040_jpg.rf.75279a36f0d12e9355b0b307a257506a.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\0000040_jpg.rf.75279a36f0d12e9355b0b307a257506a.jpg",
+      "result_image": "result_31_0000040_jpg.rf.75279a36f0d12e9355b0b307a257506a.png",
+      "detection_image": "detection_31_0000040_jpg.rf.75279a36f0d12e9355b0b307a257506a.jpg",
+      "num_detections": 0,
+      "detections": []
+    },
+    {
+      "image_index": 32,
+      "image_name": "DJI_0506_JPG.rf.ef6f7b5703f79b791abe4205ba137a5e.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0506_JPG.rf.ef6f7b5703f79b791abe4205ba137a5e.jpg",
+      "result_image": "result_32_DJI_0506_JPG.rf.ef6f7b5703f79b791abe4205ba137a5e.png",
+      "detection_image": "detection_32_DJI_0506_JPG.rf.ef6f7b5703f79b791abe4205ba137a5e.jpg",
+      "num_detections": 2,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9035948514938354,
+          "bbox": [
+            19,
+            4,
+            481,
+            347
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7848142385482788,
+          "bbox": [
+            400,
+            225,
+            502,
+            365
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 33,
+      "image_name": "usj9_png_jpg.rf.494b247df76933146abe81999caf98ad.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\usj9_png_jpg.rf.494b247df76933146abe81999caf98ad.jpg",
+      "result_image": "result_33_usj9_png_jpg.rf.494b247df76933146abe81999caf98ad.png",
+      "detection_image": "detection_33_usj9_png_jpg.rf.494b247df76933146abe81999caf98ad.jpg",
+      "num_detections": 78,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.9109721779823303,
+          "bbox": [
+            202,
+            114,
+            261,
+            166
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9018549919128418,
+          "bbox": [
+            141,
+            100,
+            202,
+            155
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8990070819854736,
+          "bbox": [
+            308,
+            84,
+            426,
+            188
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.897409975528717,
+          "bbox": [
+            174,
+            302,
+            239,
+            366
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8970305323600769,
+          "bbox": [
+            260,
+            279,
+            326,
+            342
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8930378556251526,
+          "bbox": [
+            335,
+            164,
+            401,
+            230
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8927831053733826,
+          "bbox": [
+            120,
+            223,
+            185,
+            283
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8906652927398682,
+          "bbox": [
+            424,
+            359,
+            489,
+            414
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8902021646499634,
+          "bbox": [
+            376,
+            310,
+            442,
+            373
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8885277509689331,
+          "bbox": [
+            394,
+            282,
+            460,
+            342
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8884549140930176,
+          "bbox": [
+            303,
+            233,
+            362,
+            284
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8883067965507507,
+          "bbox": [
+            409,
+            251,
+            477,
+            311
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8877184391021729,
+          "bbox": [
+            145,
+            188,
+            209,
+            247
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8876892328262329,
+          "bbox": [
+            393,
+            393,
+            476,
+            468
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8866361379623413,
+          "bbox": [
+            17,
+            261,
+            81,
+            322
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8865911364555359,
+          "bbox": [
+            273,
+            168,
+            333,
+            222
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8840809464454651,
+          "bbox": [
+            320,
+            205,
+            379,
+            260
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8838092088699341,
+          "bbox": [
+            442,
+            329,
+            506,
+            385
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8836438655853271,
+          "bbox": [
+            460,
+            155,
+            528,
+            220
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8820608854293823,
+          "bbox": [
+            287,
+            133,
+            352,
+            195
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8816264867782593,
+          "bbox": [
+            102,
+            252,
+            162,
+            308
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8814742565155029,
+          "bbox": [
+            75,
+            182,
+            138,
+            242
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8814488053321838,
+          "bbox": [
+            493,
+            223,
+            557,
+            292
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8813237547874451,
+          "bbox": [
+            168,
+            165,
+            227,
+            221
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8806923031806946,
+          "bbox": [
+            194,
+            274,
+            256,
+            333
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8806049227714539,
+          "bbox": [
+            185,
+            141,
+            247,
+            195
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8791291117668152,
+          "bbox": [
+            39,
+            234,
+            99,
+            290
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8782239556312561,
+          "bbox": [
+            459,
+            299,
+            523,
+            354
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8774598836898804,
+          "bbox": [
+            217,
+            243,
+            280,
+            300
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8747963905334473,
+          "bbox": [
+            125,
+            125,
+            183,
+            182
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8717331886291504,
+          "bbox": [
+            429,
+            218,
+            492,
+            278
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8709231615066528,
+          "bbox": [
+            102,
+            146,
+            163,
+            207
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8707736134529114,
+          "bbox": [
+            445,
+            191,
+            509,
+            251
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8706158399581909,
+          "bbox": [
+            57,
+            210,
+            117,
+            265
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8688278198242188,
+          "bbox": [
+            116,
+            491,
+            171,
+            539
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8680015206336975,
+          "bbox": [
+            238,
+            219,
+            299,
+            276
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8669965863227844,
+          "bbox": [
+            257,
+            194,
+            317,
+            251
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8637992143630981,
+          "bbox": [
+            474,
+            266,
+            539,
+            323
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8636475801467896,
+          "bbox": [
+            286,
+            256,
+            345,
+            311
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8605464100837708,
+          "bbox": [
+            182,
+            18,
+            296,
+            100
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8581504821777344,
+          "bbox": [
+            193,
+            413,
+            249,
+            457
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8517410159111023,
+          "bbox": [
+            261,
+            458,
+            319,
+            510
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8515040874481201,
+          "bbox": [
+            56,
+            502,
+            118,
+            550
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8514610528945923,
+          "bbox": [
+            94,
+            374,
+            149,
+            413
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8487765192985535,
+          "bbox": [
+            201,
+            472,
+            262,
+            519
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8478121757507324,
+          "bbox": [
+            216,
+            92,
+            274,
+            140
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8438742756843567,
+          "bbox": [
+            181,
+            356,
+            239,
+            396
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8437145352363586,
+          "bbox": [
+            187,
+            385,
+            244,
+            426
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8436359763145447,
+          "bbox": [
+            30,
+            355,
+            87,
+            397
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8406882286071777,
+          "bbox": [
+            46,
+            444,
+            103,
+            486
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8397405743598938,
+          "bbox": [
+            251,
+            400,
+            305,
+            442
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8388640880584717,
+          "bbox": [
+            87,
+            343,
+            145,
+            384
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8352460861206055,
+          "bbox": [
+            106,
+            432,
+            161,
+            472
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8352150917053223,
+          "bbox": [
+            42,
+            415,
+            98,
+            457
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8345859050750732,
+          "bbox": [
+            256,
+            430,
+            310,
+            470
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.83323073387146,
+          "bbox": [
+            343,
+            371,
+            411,
+            444
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8326092958450317,
+          "bbox": [
+            247,
+            530,
+            467,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8321011662483215,
+          "bbox": [
+            52,
+            473,
+            109,
+            514
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8289551138877869,
+          "bbox": [
+            35,
+            385,
+            92,
+            426
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8246381282806396,
+          "bbox": [
+            101,
+            403,
+            155,
+            444
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8234030604362488,
+          "bbox": [
+            19,
+            311,
+            81,
+            358
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8204514980316162,
+          "bbox": [
+            89,
+            277,
+            143,
+            319
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8166966438293457,
+          "bbox": [
+            197,
+            443,
+            254,
+            483
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8032935857772827,
+          "bbox": [
+            363,
+            343,
+            426,
+            401
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7990716695785522,
+          "bbox": [
+            245,
+            370,
+            300,
+            411
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7987803220748901,
+          "bbox": [
+            157,
+            72,
+            216,
+            126
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7870953679084778,
+          "bbox": [
+            112,
+            462,
+            166,
+            501
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7049978971481323,
+          "bbox": [
+            0,
+            520,
+            25,
+            565
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6936123371124268,
+          "bbox": [
+            172,
+            61,
+            223,
+            99
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.627095639705658,
+          "bbox": [
+            83,
+            317,
+            138,
+            350
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.514153003692627,
+          "bbox": [
+            241,
+            351,
+            294,
+            384
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.43884366750717163,
+          "bbox": [
+            245,
+            315,
+            300,
+            356
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.35149329900741577,
+          "bbox": [
+            0,
+            493,
+            20,
+            519
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3218415081501007,
+          "bbox": [
+            345,
+            342,
+            425,
+            442
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.30365410447120667,
+          "bbox": [
+            0,
+            492,
+            17,
+            511
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2952069640159607,
+          "bbox": [
+            0,
+            507,
+            21,
+            527
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.26447048783302307,
+          "bbox": [
+            0,
+            470,
+            17,
+            497
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2563697397708893,
+          "bbox": [
+            0,
+            478,
+            15,
+            496
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 34,
+      "image_name": "Farm-25_16_jpg.rf.0baf8d2ac08dc01120a878bd24a2ce17.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-25_16_jpg.rf.0baf8d2ac08dc01120a878bd24a2ce17.jpg",
+      "result_image": "result_34_Farm-25_16_jpg.rf.0baf8d2ac08dc01120a878bd24a2ce17.png",
+      "detection_image": "detection_34_Farm-25_16_jpg.rf.0baf8d2ac08dc01120a878bd24a2ce17.jpg",
+      "num_detections": 5,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9635155200958252,
+          "bbox": [
+            3,
+            218,
+            337,
+            637
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.942568838596344,
+          "bbox": [
+            2,
+            2,
+            419,
+            191
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7740558385848999,
+          "bbox": [
+            0,
+            119,
+            61,
+            273
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.6415156126022339,
+          "bbox": [
+            158,
+            122,
+            636,
+            637
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.5340276956558228,
+          "bbox": [
+            158,
+            108,
+            640,
+            640
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 35,
+      "image_name": "Farm-12_11_jpg.rf.c25aa86d731769b84fc4339141538cfa.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-12_11_jpg.rf.c25aa86d731769b84fc4339141538cfa.jpg",
+      "result_image": "result_35_Farm-12_11_jpg.rf.c25aa86d731769b84fc4339141538cfa.png",
+      "detection_image": "detection_35_Farm-12_11_jpg.rf.c25aa86d731769b84fc4339141538cfa.jpg",
+      "num_detections": 35,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9740241765975952,
+          "bbox": [
+            406,
+            46,
+            540,
+            277
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9666265845298767,
+          "bbox": [
+            239,
+            431,
+            557,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9641843438148499,
+          "bbox": [
+            202,
+            230,
+            359,
+            468
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9372957944869995,
+          "bbox": [
+            2,
+            331,
+            108,
+            475
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.933372437953949,
+          "bbox": [
+            9,
+            473,
+            106,
+            612
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9330995678901672,
+          "bbox": [
+            542,
+            273,
+            639,
+            423
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9296078085899353,
+          "bbox": [
+            542,
+            120,
+            637,
+            271
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9278372526168823,
+          "bbox": [
+            526,
+            424,
+            639,
+            571
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9261775016784668,
+          "bbox": [
+            107,
+            423,
+            233,
+            546
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9237816333770752,
+          "bbox": [
+            423,
+            279,
+            538,
+            439
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.922307014465332,
+          "bbox": [
+            80,
+            183,
+            184,
+            326
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9150974750518799,
+          "bbox": [
+            115,
+            531,
+            246,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.913832426071167,
+          "bbox": [
+            105,
+            312,
+            217,
+            419
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9124487638473511,
+          "bbox": [
+            96,
+            5,
+            204,
+            51
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.907828152179718,
+          "bbox": [
+            172,
+            159,
+            279,
+            293
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9065262675285339,
+          "bbox": [
+            105,
+            51,
+            195,
+            183
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9043449759483337,
+          "bbox": [
+            188,
+            38,
+            277,
+            162
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9038312435150146,
+          "bbox": [
+            33,
+            83,
+            109,
+            198
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9016726613044739,
+          "bbox": [
+            544,
+            47,
+            629,
+            119
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8981354832649231,
+          "bbox": [
+            3,
+            11,
+            100,
+            82
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8919810652732849,
+          "bbox": [
+            355,
+            1,
+            625,
+            48
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8840005993843079,
+          "bbox": [
+            0,
+            199,
+            79,
+            266
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8823970556259155,
+          "bbox": [
+            318,
+            260,
+            408,
+            381
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8793052434921265,
+          "bbox": [
+            0,
+            265,
+            88,
+            329
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8760775327682495,
+          "bbox": [
+            345,
+            32,
+            433,
+            92
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8754511475563049,
+          "bbox": [
+            264,
+            32,
+            342,
+            97
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8726162910461426,
+          "bbox": [
+            562,
+            571,
+            639,
+            626
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8723376393318176,
+          "bbox": [
+            0,
+            90,
+            34,
+            205
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8322943449020386,
+          "bbox": [
+            285,
+            153,
+            355,
+            270
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8247003555297852,
+          "bbox": [
+            209,
+            3,
+            257,
+            44
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8239232897758484,
+          "bbox": [
+            340,
+            127,
+            417,
+            260
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.7526304125785828,
+          "bbox": [
+            16,
+            614,
+            112,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.7461844086647034,
+          "bbox": [
+            348,
+            372,
+            424,
+            450
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.7421132326126099,
+          "bbox": [
+            259,
+            0,
+            345,
+            31
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.7274742126464844,
+          "bbox": [
+            281,
+            95,
+            422,
+            127
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 36,
+      "image_name": "DJI_0806_JPG.rf.f29387466094229516b58f6c2da45e20.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0806_JPG.rf.f29387466094229516b58f6c2da45e20.jpg",
+      "result_image": "result_36_DJI_0806_JPG.rf.f29387466094229516b58f6c2da45e20.png",
+      "detection_image": "detection_36_DJI_0806_JPG.rf.f29387466094229516b58f6c2da45e20.jpg",
+      "num_detections": 6,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.8549140095710754,
+          "bbox": [
+            8,
+            317,
+            640,
+            540
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8487518429756165,
+          "bbox": [
+            18,
+            460,
+            640,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8428830504417419,
+          "bbox": [
+            5,
+            12,
+            638,
+            240
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8389977216720581,
+          "bbox": [
+            6,
+            168,
+            640,
+            392
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.6855501532554626,
+          "bbox": [
+            1,
+            1,
+            621,
+            93
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.3337934911251068,
+          "bbox": [
+            2,
+            0,
+            620,
+            153
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 37,
+      "image_name": "DJI_0297_JPG.rf.53dfd443d5ab666f6ec1a400b1a83d44.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0297_JPG.rf.53dfd443d5ab666f6ec1a400b1a83d44.jpg",
+      "result_image": "result_37_DJI_0297_JPG.rf.53dfd443d5ab666f6ec1a400b1a83d44.png",
+      "detection_image": "detection_37_DJI_0297_JPG.rf.53dfd443d5ab666f6ec1a400b1a83d44.jpg",
+      "num_detections": 22,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9739384651184082,
+          "bbox": [
+            463,
+            76,
+            638,
+            269
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9720821380615234,
+          "bbox": [
+            114,
+            67,
+            280,
+            261
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9706612825393677,
+          "bbox": [
+            289,
+            71,
+            456,
+            265
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9695566296577454,
+          "bbox": [
+            391,
+            286,
+            521,
+            488
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9576130509376526,
+          "bbox": [
+            255,
+            283,
+            382,
+            489
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9559358954429626,
+          "bbox": [
+            531,
+            287,
+            636,
+            489
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9528585076332092,
+          "bbox": [
+            435,
+            509,
+            563,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.952516496181488,
+          "bbox": [
+            312,
+            510,
+            427,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9502437114715576,
+          "bbox": [
+            103,
+            507,
+            196,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9498662352561951,
+          "bbox": [
+            203,
+            509,
+            306,
+            638
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9436975717544556,
+          "bbox": [
+            1,
+            503,
+            100,
+            638
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9430584907531738,
+          "bbox": [
+            5,
+            280,
+            84,
+            481
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9408248662948608,
+          "bbox": [
+            30,
+            62,
+            108,
+            259
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9369204640388489,
+          "bbox": [
+            95,
+            280,
+            169,
+            484
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9324503540992737,
+          "bbox": [
+            128,
+            0,
+            245,
+            55
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9300862550735474,
+          "bbox": [
+            453,
+            0,
+            579,
+            58
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.919197678565979,
+          "bbox": [
+            180,
+            282,
+            247,
+            485
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9129080772399902,
+          "bbox": [
+            47,
+            0,
+            123,
+            48
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9050289988517761,
+          "bbox": [
+            254,
+            0,
+            435,
+            50
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9021682143211365,
+          "bbox": [
+            571,
+            510,
+            639,
+            638
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.8774234652519226,
+          "bbox": [
+            598,
+            0,
+            639,
+            54
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.815407395362854,
+          "bbox": [
+            0,
+            0,
+            39,
+            42
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 38,
+      "image_name": "DJI_0654_JPG.rf.cd246fbdd926edddfc21267a5ce909cb.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0654_JPG.rf.cd246fbdd926edddfc21267a5ce909cb.jpg",
+      "result_image": "result_38_DJI_0654_JPG.rf.cd246fbdd926edddfc21267a5ce909cb.png",
+      "detection_image": "detection_38_DJI_0654_JPG.rf.cd246fbdd926edddfc21267a5ce909cb.jpg",
+      "num_detections": 3,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9359439015388489,
+          "bbox": [
+            282,
+            222,
+            393,
+            638
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9237562417984009,
+          "bbox": [
+            155,
+            232,
+            275,
+            637
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9198827147483826,
+          "bbox": [
+            64,
+            234,
+            157,
+            639
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 39,
+      "image_name": "Farm-10_9_jpg.rf.c31ceb0683f28070913804e36b9ba5fd.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-10_9_jpg.rf.c31ceb0683f28070913804e36b9ba5fd.jpg",
+      "result_image": "result_39_Farm-10_9_jpg.rf.c31ceb0683f28070913804e36b9ba5fd.png",
+      "detection_image": "detection_39_Farm-10_9_jpg.rf.c31ceb0683f28070913804e36b9ba5fd.jpg",
+      "num_detections": 19,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9715484976768494,
+          "bbox": [
+            338,
+            151,
+            536,
+            349
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9669511914253235,
+          "bbox": [
+            333,
+            283,
+            637,
+            640
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9648249745368958,
+          "bbox": [
+            408,
+            217,
+            605,
+            427
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9639256000518799,
+          "bbox": [
+            270,
+            77,
+            457,
+            275
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9609578847885132,
+          "bbox": [
+            405,
+            0,
+            610,
+            147
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9523879289627075,
+          "bbox": [
+            0,
+            122,
+            159,
+            334
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9517872333526611,
+          "bbox": [
+            1,
+            0,
+            178,
+            192
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9369170665740967,
+          "bbox": [
+            22,
+            373,
+            356,
+            640
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9351156949996948,
+          "bbox": [
+            0,
+            255,
+            158,
+            460
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8970609307289124,
+          "bbox": [
+            0,
+            0,
+            68,
+            64
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8968785405158997,
+          "bbox": [
+            147,
+            0,
+            446,
+            149
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.861372709274292,
+          "bbox": [
+            492,
+            13,
+            638,
+            292
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8449268937110901,
+          "bbox": [
+            119,
+            48,
+            224,
+            174
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8070800304412842,
+          "bbox": [
+            223,
+            214,
+            481,
+            577
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8022400140762329,
+          "bbox": [
+            0,
+            465,
+            111,
+            640
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.6533514261245728,
+          "bbox": [
+            108,
+            121,
+            299,
+            297
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.6239202618598938,
+          "bbox": [
+            0,
+            167,
+            24,
+            220
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.37376073002815247,
+          "bbox": [
+            131,
+            275,
+            298,
+            453
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.3347913324832916,
+          "bbox": [
+            605,
+            0,
+            639,
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 40,
+      "image_name": "DJI_0092_JPG.rf.673c52ffe8c3b884c40f6b7e9ab9bc0e.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0092_JPG.rf.673c52ffe8c3b884c40f6b7e9ab9bc0e.jpg",
+      "result_image": "result_40_DJI_0092_JPG.rf.673c52ffe8c3b884c40f6b7e9ab9bc0e.png",
+      "detection_image": "detection_40_DJI_0092_JPG.rf.673c52ffe8c3b884c40f6b7e9ab9bc0e.jpg",
+      "num_detections": 10,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9544633030891418,
+          "bbox": [
+            1,
+            127,
+            197,
+            509
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9459556341171265,
+          "bbox": [
+            197,
+            140,
+            578,
+            549
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9280088543891907,
+          "bbox": [
+            192,
+            0,
+            386,
+            99
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9214428067207336,
+          "bbox": [
+            59,
+            555,
+            205,
+            630
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9171203374862671,
+          "bbox": [
+            25,
+            0,
+            167,
+            79
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9151020646095276,
+          "bbox": [
+            224,
+            562,
+            361,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.906657874584198,
+          "bbox": [
+            404,
+            7,
+            580,
+            111
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.7704769372940063,
+          "bbox": [
+            598,
+            371,
+            636,
+            536
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.6304119825363159,
+          "bbox": [
+            626,
+            233,
+            639,
+            303
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.3628608286380768,
+          "bbox": [
+            0,
+            489,
+            37,
+            615
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 41,
+      "image_name": "ce3a015a-2_png.rf.22797d220bfef65657795a6b1b7706f0.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\ce3a015a-2_png.rf.22797d220bfef65657795a6b1b7706f0.jpg",
+      "result_image": "result_41_ce3a015a-2_png.rf.22797d220bfef65657795a6b1b7706f0.png",
+      "detection_image": "detection_41_ce3a015a-2_png.rf.22797d220bfef65657795a6b1b7706f0.jpg",
+      "num_detections": 6,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.936828076839447,
+          "bbox": [
+            183,
+            28,
+            333,
+            428
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9367745518684387,
+          "bbox": [
+            449,
+            188,
+            589,
+            471
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9310084581375122,
+          "bbox": [
+            0,
+            408,
+            395,
+            622
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9127215147018433,
+          "bbox": [
+            317,
+            167,
+            457,
+            450
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3242364227771759,
+          "bbox": [
+            0,
+            565,
+            27,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3235025107860565,
+          "bbox": [
+            552,
+            557,
+            639,
+            639
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 42,
+      "image_name": "Farm-20_1_jpg.rf.7111c59fb5bcd42ba9f1bb5f85dc24dd.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-20_1_jpg.rf.7111c59fb5bcd42ba9f1bb5f85dc24dd.jpg",
+      "result_image": "result_42_Farm-20_1_jpg.rf.7111c59fb5bcd42ba9f1bb5f85dc24dd.png",
+      "detection_image": "detection_42_Farm-20_1_jpg.rf.7111c59fb5bcd42ba9f1bb5f85dc24dd.jpg",
+      "num_detections": 9,
+      "detections": [
+        {
+          "class": "farm",
+          "confidence": 0.8901028633117676,
+          "bbox": [
+            354,
+            2,
+            548,
+            173
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8739230036735535,
+          "bbox": [
+            2,
+            3,
+            410,
+            331
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8517132997512817,
+          "bbox": [
+            554,
+            413,
+            634,
+            638
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8354532122612,
+          "bbox": [
+            531,
+            14,
+            639,
+            138
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7569795250892639,
+          "bbox": [
+            390,
+            165,
+            567,
+            348
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.7091629505157471,
+          "bbox": [
+            562,
+            181,
+            639,
+            412
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.6267510056495667,
+          "bbox": [
+            5,
+            296,
+            533,
+            614
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.5287365317344666,
+          "bbox": [
+            2,
+            539,
+            534,
+            639
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.3962554633617401,
+          "bbox": [
+            3,
+            291,
+            543,
+            617
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 43,
+      "image_name": "d913d46d-19_png.rf.258d1a7e0622645a2933fbf186e38d2a.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\d913d46d-19_png.rf.258d1a7e0622645a2933fbf186e38d2a.jpg",
+      "result_image": "result_43_d913d46d-19_png.rf.258d1a7e0622645a2933fbf186e38d2a.png",
+      "detection_image": "detection_43_d913d46d-19_png.rf.258d1a7e0622645a2933fbf186e38d2a.jpg",
+      "num_detections": 4,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.9530554413795471,
+          "bbox": [
+            317,
+            220,
+            465,
+            446
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9448109269142151,
+          "bbox": [
+            187,
+            234,
+            324,
+            456
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9107024669647217,
+          "bbox": [
+            65,
+            5,
+            434,
+            189
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.843021810054779,
+          "bbox": [
+            67,
+            274,
+            198,
+            497
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 44,
+      "image_name": "Farm-19_10_jpg.rf.3476cebbeabc2f7709a9dda3f85c7c85.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-19_10_jpg.rf.3476cebbeabc2f7709a9dda3f85c7c85.jpg",
+      "result_image": "result_44_Farm-19_10_jpg.rf.3476cebbeabc2f7709a9dda3f85c7c85.png",
+      "detection_image": "detection_44_Farm-19_10_jpg.rf.3476cebbeabc2f7709a9dda3f85c7c85.jpg",
+      "num_detections": 10,
+      "detections": [
+        {
+          "class": "farm",
+          "confidence": 0.9460780024528503,
+          "bbox": [
+            416,
+            420,
+            618,
+            640
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9295571446418762,
+          "bbox": [
+            138,
+            259,
+            337,
+            544
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9195524454116821,
+          "bbox": [
+            0,
+            372,
+            202,
+            615
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9031018614768982,
+          "bbox": [
+            0,
+            1,
+            212,
+            387
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8765891790390015,
+          "bbox": [
+            191,
+            0,
+            378,
+            74
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.861449658870697,
+          "bbox": [
+            214,
+            305,
+            536,
+            638
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7410751581192017,
+          "bbox": [
+            539,
+            522,
+            607,
+            640
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.6824287176132202,
+          "bbox": [
+            287,
+            9,
+            638,
+            404
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.6523382663726807,
+          "bbox": [
+            416,
+            41,
+            639,
+            404
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.4723109006881714,
+          "bbox": [
+            567,
+            280,
+            639,
+            441
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 45,
+      "image_name": "Farm-12_16_jpg.rf.ee8d2bca18ec0c89e507fb26fe2ff4e0.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-12_16_jpg.rf.ee8d2bca18ec0c89e507fb26fe2ff4e0.jpg",
+      "result_image": "result_45_Farm-12_16_jpg.rf.ee8d2bca18ec0c89e507fb26fe2ff4e0.png",
+      "detection_image": "detection_45_Farm-12_16_jpg.rf.ee8d2bca18ec0c89e507fb26fe2ff4e0.jpg",
+      "num_detections": 35,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9495096206665039,
+          "bbox": [
+            182,
+            432,
+            314,
+            575
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9202060699462891,
+          "bbox": [
+            316,
+            447,
+            420,
+            583
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9198848009109497,
+          "bbox": [
+            0,
+            546,
+            97,
+            635
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9172661304473877,
+          "bbox": [
+            424,
+            426,
+            534,
+            579
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.914314329624176,
+          "bbox": [
+            379,
+            171,
+            547,
+            346
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9141628742218018,
+          "bbox": [
+            536,
+            427,
+            622,
+            593
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9076014161109924,
+          "bbox": [
+            55,
+            426,
+            127,
+            555
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9069235920906067,
+          "bbox": [
+            0,
+            410,
+            64,
+            543
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9044902324676514,
+          "bbox": [
+            401,
+            333,
+            561,
+            424
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.898658812046051,
+          "bbox": [
+            122,
+            436,
+            180,
+            563
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.882175624370575,
+          "bbox": [
+            30,
+            27,
+            137,
+            142
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8722387552261353,
+          "bbox": [
+            537,
+            593,
+            635,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8720973134040833,
+          "bbox": [
+            407,
+            584,
+            532,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8680399656295776,
+          "bbox": [
+            175,
+            570,
+            402,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.8629109263420105,
+          "bbox": [
+            94,
+            564,
+            176,
+            637
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8606732487678528,
+          "bbox": [
+            397,
+            40,
+            561,
+            190
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.84543377161026,
+          "bbox": [
+            400,
+            2,
+            568,
+            51
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.7670970559120178,
+          "bbox": [
+            1,
+            0,
+            37,
+            194
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7542319893836975,
+          "bbox": [
+            240,
+            0,
+            392,
+            29
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7022344470024109,
+          "bbox": [
+            578,
+            5,
+            639,
+            40
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.7003924250602722,
+          "bbox": [
+            550,
+            319,
+            640,
+            423
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.6393455862998962,
+          "bbox": [
+            20,
+            142,
+            136,
+            260
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.6323271989822388,
+          "bbox": [
+            140,
+            17,
+            235,
+            129
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.6319372057914734,
+          "bbox": [
+            567,
+            38,
+            639,
+            158
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.5696812868118286,
+          "bbox": [
+            138,
+            131,
+            237,
+            248
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.5525830984115601,
+          "bbox": [
+            41,
+            0,
+            241,
+            26
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.5400677919387817,
+          "bbox": [
+            619,
+            427,
+            639,
+            595
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.4335874617099762,
+          "bbox": [
+            182,
+            250,
+            291,
+            432
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.3865940272808075,
+          "bbox": [
+            272,
+            287,
+            420,
+            448
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.38216307759284973,
+          "bbox": [
+            108,
+            252,
+            200,
+            422
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.37459632754325867,
+          "bbox": [
+            9,
+            260,
+            117,
+            420
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.3710087835788727,
+          "bbox": [
+            245,
+            146,
+            385,
+            328
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.348722904920578,
+          "bbox": [
+            9,
+            261,
+            117,
+            420
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.3485526740550995,
+          "bbox": [
+            276,
+            291,
+            420,
+            447
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.3121130168437958,
+          "bbox": [
+            245,
+            13,
+            400,
+            163
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 46,
+      "image_name": "kel-jalantmnkiara_png_jpg.rf.2bbaf2df562d5bca15befdd80c3a6aa7.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\kel-jalantmnkiara_png_jpg.rf.2bbaf2df562d5bca15befdd80c3a6aa7.jpg",
+      "result_image": "result_46_kel-jalantmnkiara_png_jpg.rf.2bbaf2df562d5bca15befdd80c3a6aa7.png",
+      "detection_image": "detection_46_kel-jalantmnkiara_png_jpg.rf.2bbaf2df562d5bca15befdd80c3a6aa7.jpg",
+      "num_detections": 56,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.8627429008483887,
+          "bbox": [
+            319,
+            127,
+            401,
+            258
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8469544053077698,
+          "bbox": [
+            486,
+            530,
+            580,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8384798169136047,
+          "bbox": [
+            17,
+            268,
+            142,
+            322
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8375374674797058,
+          "bbox": [
+            319,
+            11,
+            369,
+            120
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8292035460472107,
+          "bbox": [
+            14,
+            8,
+            73,
+            122
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8194458484649658,
+          "bbox": [
+            13,
+            532,
+            146,
+            585
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8020604848861694,
+          "bbox": [
+            154,
+            340,
+            283,
+            388
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.8017922043800354,
+          "bbox": [
+            152,
+            267,
+            275,
+            319
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7980690002441406,
+          "bbox": [
+            154,
+            502,
+            282,
+            557
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7909792065620422,
+          "bbox": [
+            272,
+            12,
+            317,
+            124
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7828759551048279,
+          "bbox": [
+            411,
+            149,
+            516,
+            261
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7810584902763367,
+          "bbox": [
+            502,
+            177,
+            610,
+            296
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.775068461894989,
+          "bbox": [
+            455,
+            164,
+            561,
+            277
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7683184146881104,
+          "bbox": [
+            364,
+            34,
+            408,
+            125
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7618650197982788,
+          "bbox": [
+            391,
+            130,
+            464,
+            239
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7617937326431274,
+          "bbox": [
+            157,
+            468,
+            285,
+            515
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7606443762779236,
+          "bbox": [
+            493,
+            42,
+            566,
+            160
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7456891536712646,
+          "bbox": [
+            405,
+            38,
+            460,
+            128
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7435258030891418,
+          "bbox": [
+            74,
+            126,
+            134,
+            211
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7429946064949036,
+          "bbox": [
+            416,
+            573,
+            465,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7429593205451965,
+          "bbox": [
+            18,
+            466,
+            140,
+            516
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.726313591003418,
+          "bbox": [
+            19,
+            501,
+            142,
+            541
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.722995936870575,
+          "bbox": [
+            130,
+            5,
+            172,
+            125
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7183415293693542,
+          "bbox": [
+            19,
+            408,
+            141,
+            452
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7103868126869202,
+          "bbox": [
+            18,
+            374,
+            141,
+            413
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7077814936637878,
+          "bbox": [
+            17,
+            315,
+            139,
+            354
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7022578716278076,
+          "bbox": [
+            18,
+            343,
+            138,
+            385
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7010456919670105,
+          "bbox": [
+            155,
+            376,
+            278,
+            418
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.7005535960197449,
+          "bbox": [
+            436,
+            48,
+            482,
+            137
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6983655095100403,
+          "bbox": [
+            155,
+            309,
+            274,
+            346
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6942882537841797,
+          "bbox": [
+            457,
+            565,
+            519,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6844513416290283,
+          "bbox": [
+            155,
+            403,
+            280,
+            449
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6793084740638733,
+          "bbox": [
+            156,
+            434,
+            277,
+            478
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6664825677871704,
+          "bbox": [
+            66,
+            10,
+            103,
+            122
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6392614245414734,
+          "bbox": [
+            94,
+            8,
+            139,
+            124
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6344364285469055,
+          "bbox": [
+            223,
+            127,
+            298,
+            241
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6236706376075745,
+          "bbox": [
+            532,
+            77,
+            588,
+            166
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6121740937232971,
+          "bbox": [
+            159,
+            126,
+            231,
+            254
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6120185852050781,
+          "bbox": [
+            19,
+            443,
+            141,
+            478
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.6072407960891724,
+          "bbox": [
+            558,
+            57,
+            636,
+            174
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5762749314308167,
+          "bbox": [
+            207,
+            33,
+            238,
+            121
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.574627697467804,
+          "bbox": [
+            18,
+            445,
+            140,
+            507
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5651722550392151,
+          "bbox": [
+            172,
+            29,
+            208,
+            123
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5520198345184326,
+          "bbox": [
+            465,
+            31,
+            532,
+            148
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5420162081718445,
+          "bbox": [
+            132,
+            127,
+            187,
+            227
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5295358896255493,
+          "bbox": [
+            23,
+            127,
+            85,
+            212
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.5046179890632629,
+          "bbox": [
+            304,
+            578,
+            366,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4721551239490509,
+          "bbox": [
+            240,
+            32,
+            275,
+            121
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.4152670204639435,
+          "bbox": [
+            468,
+            60,
+            524,
+            147
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.39882105588912964,
+          "bbox": [
+            361,
+            582,
+            412,
+            639
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.39457079768180847,
+          "bbox": [
+            140,
+            46,
+            173,
+            124
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.38331717252731323,
+          "bbox": [
+            558,
+            81,
+            626,
+            174
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.3658297061920166,
+          "bbox": [
+            200,
+            32,
+            233,
+            121
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.36568284034729004,
+          "bbox": [
+            22,
+            127,
+            87,
+            244
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.28510499000549316,
+          "bbox": [
+            185,
+            126,
+            231,
+            215
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.2500004470348358,
+          "bbox": [
+            446,
+            150,
+            512,
+            229
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 47,
+      "image_name": "DJI_0777_JPG.rf.9c7e87a04d35edfe1455c8192f7f0687.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\DJI_0777_JPG.rf.9c7e87a04d35edfe1455c8192f7f0687.jpg",
+      "result_image": "result_47_DJI_0777_JPG.rf.9c7e87a04d35edfe1455c8192f7f0687.png",
+      "detection_image": "detection_47_DJI_0777_JPG.rf.9c7e87a04d35edfe1455c8192f7f0687.jpg",
+      "num_detections": 3,
+      "detections": [
+        {
+          "class": "rice-fields",
+          "confidence": 0.9585050344467163,
+          "bbox": [
+            183,
+            365,
+            481,
+            639
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9540338516235352,
+          "bbox": [
+            6,
+            424,
+            200,
+            640
+          ]
+        },
+        {
+          "class": "rice-fields",
+          "confidence": 0.9100834727287292,
+          "bbox": [
+            280,
+            0,
+            628,
+            121
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 48,
+      "image_name": "2b9d4b82-10_png.rf.e9acaf9b5c21a9620713c5c6a094c9bd.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\2b9d4b82-10_png.rf.e9acaf9b5c21a9620713c5c6a094c9bd.jpg",
+      "result_image": "result_48_2b9d4b82-10_png.rf.e9acaf9b5c21a9620713c5c6a094c9bd.png",
+      "detection_image": "detection_48_2b9d4b82-10_png.rf.e9acaf9b5c21a9620713c5c6a094c9bd.jpg",
+      "num_detections": 3,
+      "detections": [
+        {
+          "class": "roof",
+          "confidence": 0.9694920182228088,
+          "bbox": [
+            164,
+            133,
+            385,
+            370
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9511317014694214,
+          "bbox": [
+            361,
+            69,
+            578,
+            369
+          ]
+        },
+        {
+          "class": "roof",
+          "confidence": 0.9376948475837708,
+          "bbox": [
+            117,
+            441,
+            452,
+            640
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 49,
+      "image_name": "Farm-3_4_jpg.rf.547cb5483037a2bd26ec2f9b238586af.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-3_4_jpg.rf.547cb5483037a2bd26ec2f9b238586af.jpg",
+      "result_image": "result_49_Farm-3_4_jpg.rf.547cb5483037a2bd26ec2f9b238586af.png",
+      "detection_image": "detection_49_Farm-3_4_jpg.rf.547cb5483037a2bd26ec2f9b238586af.jpg",
+      "num_detections": 11,
+      "detections": [
+        {
+          "class": "farm",
+          "confidence": 0.9223031401634216,
+          "bbox": [
+            322,
+            93,
+            635,
+            275
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9200281500816345,
+          "bbox": [
+            25,
+            560,
+            126,
+            639
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8850734233856201,
+          "bbox": [
+            306,
+            247,
+            639,
+            534
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8630326986312866,
+          "bbox": [
+            1,
+            30,
+            347,
+            317
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8621928691864014,
+          "bbox": [
+            126,
+            483,
+            585,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.7803308367729187,
+          "bbox": [
+            439,
+            0,
+            620,
+            118
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.627608597278595,
+          "bbox": [
+            1,
+            294,
+            243,
+            572
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.6189749240875244,
+          "bbox": [
+            16,
+            0,
+            385,
+            79
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.5552759170532227,
+          "bbox": [
+            3,
+            292,
+            244,
+            572
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.48354995250701904,
+          "bbox": [
+            21,
+            0,
+            386,
+            79
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.3553091287612915,
+          "bbox": [
+            384,
+            5,
+            433,
+            91
+          ]
+        }
+      ]
+    },
+    {
+      "image_index": 50,
+      "image_name": "Farm-7_27_jpg.rf.157d43049b51bf91f4002f9fe2c077f1.jpg",
+      "image_path": "data\\raw\\new-2-1\\train\\images\\Farm-7_27_jpg.rf.157d43049b51bf91f4002f9fe2c077f1.jpg",
+      "result_image": "result_50_Farm-7_27_jpg.rf.157d43049b51bf91f4002f9fe2c077f1.png",
+      "detection_image": "detection_50_Farm-7_27_jpg.rf.157d43049b51bf91f4002f9fe2c077f1.jpg",
+      "num_detections": 8,
+      "detections": [
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9613435864448547,
+          "bbox": [
+            2,
+            181,
+            343,
+            505
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9403954744338989,
+          "bbox": [
+            0,
+            38,
+            143,
+            201
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.9266132116317749,
+          "bbox": [
+            452,
+            93,
+            638,
+            614
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.925302267074585,
+          "bbox": [
+            208,
+            323,
+            358,
+            639
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.9229938983917236,
+          "bbox": [
+            97,
+            0,
+            322,
+            156
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.8781287670135498,
+          "bbox": [
+            29,
+            423,
+            240,
+            639
+          ]
+        },
+        {
+          "class": "Baren-Land",
+          "confidence": 0.523166835308075,
+          "bbox": [
+            409,
+            0,
+            592,
+            83
+          ]
+        },
+        {
+          "class": "farm",
+          "confidence": 0.5178491473197937,
+          "bbox": [
+            408,
+            0,
+            591,
+            82
+          ]
+        }
+      ]
+    }
+  ]
+}

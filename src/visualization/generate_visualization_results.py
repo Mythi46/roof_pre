@@ -17,6 +17,11 @@ import random
 from ultralytics import YOLO
 import yaml
 
+# 设置matplotlib使用英文显示，避免乱码问题
+plt.rcParams['font.family'] = 'DejaVu Sans'
+plt.rcParams['axes.unicode_minus'] = False
+print("✅ 设置图表使用英文显示")
+
 print("🎨 生成专家改进版可视化结果")
 print("=" * 50)
 
@@ -116,16 +121,16 @@ def create_visualization(image_path, predictions, ground_truth, output_path, ima
     
     # 创建图形
     fig, axes = plt.subplots(2, 2, figsize=(16, 12))
-    fig.suptitle(f'专家改进版结果分析 - {image_name}', fontsize=16, fontweight='bold')
-    
-    # 1. 原始图像
+    fig.suptitle(f'Expert Improved Model Analysis - {image_name}', fontsize=16, fontweight='bold')
+
+    # 1. Original Image
     axes[0,0].imshow(image_rgb)
-    axes[0,0].set_title('原始图像', fontsize=14)
+    axes[0,0].set_title('Original Image', fontsize=14)
     axes[0,0].axis('off')
-    
-    # 2. 真实标签
+
+    # 2. Ground Truth
     axes[0,1].imshow(image_rgb)
-    axes[0,1].set_title('真实标签 (Ground Truth)', fontsize=14)
+    axes[0,1].set_title('Ground Truth Labels', fontsize=14)
     for gt in ground_truth:
         x1, y1, x2, y2 = gt['bbox']
         rect = patches.Rectangle((x1, y1), x2-x1, y2-y1, 
@@ -136,9 +141,9 @@ def create_visualization(image_path, predictions, ground_truth, output_path, ima
                       color=np.array(colors[gt['class']])/255, fontsize=10, fontweight='bold')
     axes[0,1].axis('off')
     
-    # 3. 预测结果
+    # 3. Prediction Results
     axes[1,0].imshow(image_rgb)
-    axes[1,0].set_title('专家改进版预测结果', fontsize=14)
+    axes[1,0].set_title('Expert Model Predictions', fontsize=14)
     
     if predictions and len(predictions.boxes) > 0:
         boxes = predictions.boxes.xyxy.cpu().numpy()
@@ -156,9 +161,9 @@ def create_visualization(image_path, predictions, ground_truth, output_path, ima
                               color=np.array(colors[cls])/255, fontsize=10, fontweight='bold')
     axes[1,0].axis('off')
     
-    # 4. 对比分析
+    # 4. Comparison Analysis
     axes[1,1].imshow(image_rgb)
-    axes[1,1].set_title('对比分析 (绿色=正确, 红色=错误, 蓝色=漏检)', fontsize=14)
+    axes[1,1].set_title('Analysis (Green=Correct, Red=Wrong, Blue=Missed)', fontsize=14)
     
     # 绘制真实标签（蓝色虚线）
     for gt in ground_truth:
